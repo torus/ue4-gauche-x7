@@ -3,10 +3,7 @@
 #include "x7.h"
 #include "MyActor.h"
 #include <gauche.h>
-
-extern "C" {
 #include <gauche/static.h>
-}
 
 // Sets default values
 AMyActor::AMyActor()
