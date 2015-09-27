@@ -1,0 +1,3 @@
+[submodule "Source/Gauche"]
+	path = Source/Gauche
+	url = git@github.com:shirok/Gauche.git
