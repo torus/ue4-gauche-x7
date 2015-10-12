@@ -4,6 +4,7 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "GaucheObj.h"
 #include "MyActor.generated.h"
 
 UCLASS()
@@ -11,7 +12,7 @@ class X7_API AMyActor : public AActor
 {
     GENERATED_BODY()
 
-public:	
+ public:	
     // Sets default values for this actor's properties
     AMyActor();
 
@@ -21,9 +22,31 @@ public:
     // Called every frame
     virtual void Tick( float DeltaSeconds ) override;
 
+    UFUNCTION(BlueprintCallable, Category="Gauche")
+	int32 Eval(const FString &expr);
+
+    UFUNCTION(BlueprintCallable, Category="Gauche")
+	UGaucheObj* EvalString(const FString &expr);
+
+    UFUNCTION(BlueprintCallable, Category="Gauche")
+	UGaucheObj* Apply(UGaucheObj *proc, TArray<UGaucheObj*> args);
 private:
-    struct Initializer {
-	Initializer();
+
+    class GaucheState {
+    public:
+	GaucheState();
     };
-    static Initializer initializer;
+
+    static GaucheState* state() {
+	static GaucheState *st = NULL;
+	if (!st) {
+	    st = new GaucheState();
+	}
+	return st;
+    };
 };
+
+
+// Local Variables:
+// c-basic-offset: 4;
+// End:
