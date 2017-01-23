@@ -5,9 +5,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/Actions/TestPawnAction_Log.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTDecorator_CantExecute.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTDecorator_DelayedAbort.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTService_Log.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTTask_LatentWithFlags.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTTask_Log.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTTask_SetFlag.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/BehaviorTree/TestBTTask_SetValue.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/MockAI/MockAI.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/MockAI/MockAI_BT.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AITestSuite/Private/MockAI/MockGameplayTasks.cpp" \
@@ -30,7 +32,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/Android/Android_DXTTargetPlatform/Private/Android_DXTTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Android/Android_ETC1TargetPlatform/Private/Android_ETC1TargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Android/Android_ETC2TargetPlatform/Private/Android_ETC2TargetPlatformModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Android/Android_MultiTargetPlatform/Private/Android_MultiTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Android/Android_PVRTCTargetPlatform/Private/Android_PVRTCTargetPlatformModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Apple/MetalShaderFormat/Private/MetalBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Apple/MetalShaderFormat/Private/MetalShaderCompiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Apple/MetalShaderFormat/Private/MetalShaderFormat.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Apple/MetalShaderFormat/Private/MetalUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetFixUpRedirectors.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetRenameManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTools.cpp" \
@@ -38,6 +45,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/SDiscoveringAssetsDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/SPackageReportDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_AnimBlueprint.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_AnimMontage.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_AnimSequence.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_AnimationAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Blueprint.cpp" \
@@ -49,37 +57,29 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_CurveTable.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_DataTable.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_DestructibleMesh.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_DialogueWave.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Enum.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_FbxSceneImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Font.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_FontFace.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_ForceFeedbackEffect.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_InstancedFoliageSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Material.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_MaterialFunction.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_MaterialInstanceConstant.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_MaterialInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_MorphTarget.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_NiagaraEffect.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_NiagaraScript.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_ParticleSystem.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_PhysicalMaterial.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_PhysicsAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_ProceduralFoliageSpawner.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Redirector.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_ReverbEffect.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Rig.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SkeletalMesh.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Skeleton.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SlateBrush.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SlateWidgetStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SoundAttenuation.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SoundBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SoundClass.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SoundCue.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SoundMix.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SoundWave.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_StaticMesh.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Struct.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SubDSurface.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_SubsurfaceProfile.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Texture.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_Texture2D.cpp" \
@@ -87,7 +87,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_TextureRenderTarget.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_TouchInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_VectorFieldStatic.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_VertexAnimation.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_World.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AudioFormatADPCM/Private/AudioFormatADPCM.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AudioFormatOgg/Private/AudioFormatOgg.cpp" \
@@ -98,6 +97,23 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationController/Private/AutomationDeviceClusterManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationController/Private/AutomationReport.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationController/Private/AutomationReportManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/AutomatedApplication.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/AutomationDriver.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/AutomationDriverLogging.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/AutomationDriverModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/DriverElement.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/DriverSequence.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/LocateBy.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/PassThroughMessageHandler .cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/SlateWidgetElement.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/StepExecutor.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/WaitUntil.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/Locators/SlateWidgetLocatorByDelegate.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/Locators/SlateWidgetLocatorByPath.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/Locators/SlateWidgetLocatorByUniqueTag.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/Specs/AutomationDriver.spec.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/Specs/AutomationDriverSpecSuiteViewModel.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/AutomationDriver/Private/Specs/SAutomationDriverSpecSuite.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationWindow/Private/AutomationPresetManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationWindow/Private/AutomationWindowModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationWindow/Private/SAutomationExportMenu.cpp" \
@@ -106,8 +122,23 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationWindow/Private/SAutomationWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/AutomationWindow/Private/SAutomationWindowCommandBar.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/BlankModule/Private/BlankModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BPCompilerTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendAnim.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendGatherDependencies.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendUMG.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintCompilerCppBackend/Private/BlueprintCompilerCppBackendValueHelper.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintNativeCodeGen/Private/BlueprintNativeCodeGenManifest.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintNativeCodeGen/Private/BlueprintNativeCodeGenModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintNativeCodeGen/Private/BlueprintNativeCodeGenUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintNativeCodeGen/Private/NativeCodeGenerationTool.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintProfiler/Private/BlueprintProfiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintProfiler/Private/BlueprintProfilerConnectionDrawingPolicy.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintProfiler/Private/ScriptInstrumentationCapture.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/BlueprintProfiler/Private/ScriptInstrumentationPlayback.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/CollectionManager/Private/Collection.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/CollectionManager/Private/CollectionManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/CollectionManager/Private/CollectionManagerModule.cpp" \
@@ -128,10 +159,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/CrashTracker/Private/CrashTrackerModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/CrashTracker/Private/CrashVideoCapture.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/DDCCleanup.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/DDCStatsHelper.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/DerivedDataBackendAsyncPutWrapper.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/DerivedDataBackends.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/DerivedDataCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/FileSystemDerivedDataBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/MemoryDerivedDataBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/DerivedDataCache/Private/PakFileDerivedDataBackend.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopPlatform/Private/DesktopPlatformBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopPlatform/Private/DesktopPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopPlatform/Private/PlatformInfo.cpp" \
@@ -142,6 +175,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopPlatform/Private/Windows/WindowsNativeFeedbackContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopPlatform/Private/Windows/WindowsRegistry.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopWidgets/Private/DesktopWidgetsModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/DesktopWidgets/Private/Widgets/Input/SDirectoryPicker.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DesktopWidgets/Private/Widgets/Input/SFilePathPicker.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DeviceManager/Private/DeviceManagerModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DeviceManager/Private/Widgets/SDeviceManager.cpp" \
@@ -160,91 +194,43 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/DirectoryWatcher/Private/Linux/DirectoryWatcherLinux.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DirectoryWatcher/Private/Mac/DirectoryWatchRequestMac.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DirectoryWatcher/Private/Mac/DirectoryWatcherMac.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/DirectoryWatcher/Private/Tests/DirectoryWatchterRunTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DirectoryWatcher/Private/Windows/DirectoryWatchRequestWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/DirectoryWatcher/Private/Windows/DirectoryWatcherWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ExternalImagePicker/Private/ExternalImagePickerModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ExternalImagePicker/Private/SExternalImagePicker.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsAndChatModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsAndChatStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsChatChromeStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsChatStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsComboStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsFontStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsFontStyleService.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsListStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/FriendsMarkupStyle.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/DataAccess/FriendsAndChatManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/DataAccess/FriendsMessageManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/ClanMemberList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/ClanRepository.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/DefaultFriendsList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/FriendInviteList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/FriendsAndChatAnalytics.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/FriendsChatMarkupService.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/FriendsListProvider.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/FriendsNavigationService.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Domain/RecentPlayerList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatChromeTabViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatChromeViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatDisplayService.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatItemViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatSettingsService.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatSettingsViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatTipViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ChatViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ClanCollectionViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ClanInfoViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/ClanListViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/FriendListViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/FriendViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/FriendsStatusViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/FriendsUserViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/Presentation/FriendsViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SAutoTextScroller.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatChrome.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatChromeFullSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatChromeQuickSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatChromeSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatChromeTabQuickSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatEntryWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatMarkupTips.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SChatWindow.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SClanContainer.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SClanDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SClanHome.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SClanItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SClanList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SClanListContainer.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendActions.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendRequest.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendUserHeader.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsAndChatCombo.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsContainer.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsListContainer.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsStatus.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsStatusCombo.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SFriendsToolTip.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SInviteItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Layers/UI/SInvitesList.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Models/FriendGameInviteItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Models/FriendItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Models/FriendPartyInviteItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FriendsAndChat/Private/Models/FriendRecentPlayerItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/AutomationBlueprintFunctionLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/DelayForFramesLatentAction.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FuncTestManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FuncTestRenderingComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FunctionalAITest.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FunctionalTest.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FunctionalTestGameMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FunctionalTestLevelScript.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FunctionalTestingManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/FunctionalTestingModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/Tests/FuncTestPerforming.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebugger.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggingComponent.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggingControllerComponent.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggingHUDComponent.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggingReplicator.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/ScreenshotFunctionalTest.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/TakeScreenshotAfterTimeLatentAction.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/TestPhaseComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/FunctionalTesting/Private/Tests/ClientFuncTestPerforming.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerAddonBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerAddonManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerCategory.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerCategoryReplicator.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerConfig.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerExtension.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerExtension_HUD.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerExtension_Spectator.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerLocalController.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerPlayerManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerRenderingComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/GameplayDebuggerTypes.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/Editor/GameplayDebuggerCategoryConfigCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/Editor/GameplayDebuggerEdMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/Editor/GameplayDebuggerExtensionConfigCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/Editor/GameplayDebuggerInputConfigCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/GameplayDebugger/Private/Editor/GameplayDebuggerToolkit.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/GammaUI/Private/GammaUI.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/GammaUI/Private/GammaUIPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/HTML5/HTML5PlatformEditor/Private/HTML5PlatformEditorClasses.cpp" \
@@ -253,17 +239,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/HTML5/HTML5TargetPlatform/Private/HTML5TargetDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/HTML5/HTML5TargetPlatform/Private/HTML5TargetPlatform.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/HTML5/HTML5TargetPlatform/Private/HTML5TargetPlatformModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/HierarchicalLODUtilities/Private/HierarchicalLODProxyProcessor.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/HierarchicalLODUtilities/Private/HierarchicalLODUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/HierarchicalLODUtilities/Private/HierarchicalLODUtilitiesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/HotReload/Private/HotReload.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/HotReload/Private/HotReloadClassReinstancer.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageCore/Private/ImageCore.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/BmpImageWrapper.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/ExrImageWrapper.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/IcnsImageWrapper.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/IcoImageWrapper.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/ImageWrapperBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/ImageWrapperModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/JpegImageWrapper.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ImageWrapper/Private/PngImageWrapper.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/InternationalizationSettings/Private/InternationalizationSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/InternationalizationSettings/Private/InternationalizationSettingsModel.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/InternationalizationSettings/Private/InternationalizationSettingsModelDetails.cpp" \
@@ -273,11 +253,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/LauncherServices/Private/Launcher/LauncherProjectPath.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LauncherServices/Private/Launcher/LauncherWorker.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LauncherServices/Private/Profiles/LauncherProfileManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxClientTargetPlatform/Private/LinuxClientTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxNoEditorTargetPlatform/Private/LinuxNoEditorTargetPlatformModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxNoEditorTargetPlatform/Private/LinuxTargetDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxServerTargetPlatform/Private/LinuxServerTargetPlatformModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxServerTargetPlatform/Private/LinuxTargetDevice.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxTargetPlatform/Private/LinuxTargetDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxTargetPlatform/Private/LinuxTargetPlatformClasses.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Linux/LinuxTargetPlatform/Private/LinuxTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LocalizationService/Private/DefaultLocalizationServiceProvider.cpp" \
@@ -291,29 +269,31 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/LogVisualizerSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/LogVisualizerStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SFilterWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SSequencerSectionOverlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/STimeSlider.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/STimeline.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/STimelineBar.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/STimelinesContainer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLogger.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerFilters.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerLogsList.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerReport.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerSectionOverlay.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerStatusView.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerTimeSlider.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerTimeline.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerTimelineBar.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerTimelinesContainer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerToolbar.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/SVisualLoggerView.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/TimeSliderController.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerCameraController.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerCanvasRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerDatabase.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerHUD.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerRenderingActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerTimeSliderController.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Mac/MacClientTargetPlatform/Private/MacClientTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Mac/MacNoEditorTargetPlatform/Private/MacNoEditorTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Mac/MacServerTargetPlatform/Private/MacServerTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Mac/MacTargetPlatform/Private/MacTargetPlatformClasses.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Mac/MacTargetPlatform/Private/MacTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/MaterialUtilities/Private/MaterialUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/MaterialUtilities/Private/MeshRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Merge/Private/Merge.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Merge/Private/MergeUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Merge/Private/SBlueprintMerge.cpp" \
@@ -342,6 +322,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/ModuleUI/Private/SModuleUI.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/OutputLog/Private/OutputLogModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/OutputLog/Private/SDebugConsole.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/OutputLog/Private/SDeviceOutputLog.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/OutputLog/Private/SOutputLog.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/PackageDependencyInfo/Private/PackageDependencyInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerCommands.cpp" \
@@ -350,7 +331,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerFPSAnalyzer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerRawStats.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerRawStatsForMemory.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerRawStatsForThreadView.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerSample.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerSession.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/ProfilerStream.cpp" \
@@ -359,6 +341,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SEventGraphTooltip.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SFiltersAndPresets.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SHistogram.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SMultiDumpBrowser.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SProfilerFPSChartPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SProfilerGraphPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Profiler/Private/Widgets/SProfilerMiniView.cpp" \
@@ -369,6 +352,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/ProfilerClient/Private/ProfilerClientManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProfilerClient/Private/ProfilerClientModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProfilerMessages/Private/ProfilerMessagesModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/ProfilerService/Private/ProfilerServiceFileTransfer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProfilerService/Private/ProfilerServiceManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProfilerService/Private/ProfilerServiceModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/ProjectLauncherModule.cpp" \
@@ -379,6 +363,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/SProjectLauncherPreviewPage.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/SProjectLauncherSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/SProjectLauncherTaskListRow.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Archive/SProjectLauncherArchivePage.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Build/SProjectLauncherBuildPage.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Cook/SProjectLauncherCookByTheBookSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ProjectLauncher/Private/Widgets/Cook/SProjectLauncherCookOnTheFlySettings.cpp" \
@@ -408,13 +393,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/RealtimeProfiler/Private/SRealtimeProfilerTimeline.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/RealtimeProfiler/Private/SRealtimeProfilerVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/ScreenShotComparisonModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenHistoryView.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenPlatformRow.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenComparisonRow.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenShotBrowser.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenShotImagePopup.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenShotItem.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenShotSearchBar.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparison/Private/Widgets/SScreenViewRow.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparisonTools/Private/ImageComparer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparisonTools/Private/ScreenShotBaseNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparisonTools/Private/ScreenShotManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ScreenShotComparisonTools/Private/ScreenShotToolsModule.cpp" \
@@ -427,18 +409,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/SessionFrontend/Private/Widgets/Console/SSessionConsoleFilterBar.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SessionFrontend/Private/Widgets/Console/SSessionConsoleShortcutWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SessionFrontend/Private/Widgets/Console/SSessionConsoleToolbar.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SessionMessages/Private/SessionMessagesModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SessionServices/Private/SessionInfo.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SessionServices/Private/SessionInstanceInfo.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SessionServices/Private/SessionManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SessionServices/Private/SessionService.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SessionServices/Private/SessionServicesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Settings/Private/SettingsCategory.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Settings/Private/SettingsContainer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Settings/Private/SettingsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Settings/Private/SettingsSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SettingsEditor/Private/SettingsEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SettingsEditor/Private/Widgets/SSettingsEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SettingsEditor/Private/Widgets/SSettingsSectionHeader.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ShaderCompilerCommon/Private/HlslAST.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ShaderCompilerCommon/Private/HlslLexer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/ShaderCompilerCommon/Private/HlslParser.cpp" \
@@ -456,14 +433,20 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/SharedSettingsWidgets/Private/SSettingsEditorCheckoutNotice.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SharedSettingsWidgets/Private/SharedSettingsWidgetsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SimplygonMeshReduction/Private/SimplygonMeshReduction.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SimplygonSwarm/Private/SimplygonRESTClient.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SimplygonSwarm/Private/SimplygonSwarm.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SlackIntegrations/Private/SlackIncomingWebhookInterface.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SlackIntegrations/Private/SlackIntegrationsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateFileDialogs/Private/SlateFileDialogsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateFileDialogs/Private/SlateFileDialogsStyles.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateFileDialogs/Private/SlateFileDlgWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/SlateReflectorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/WidgetSnapshotService.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/Models/WidgetReflectorNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/Widgets/SAtlasVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/Widgets/SWidgetReflector.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/Widgets/SWidgetReflectorTreeWidgetItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SlateReflector/Private/Widgets/SWidgetSnapshotVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SourceCodeAccess/Private/DefaultSourceCodeAccessor.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SourceCodeAccess/Private/SourceCodeAccessModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SourceCodeAccess/Private/SourceCodeAccessSettings.cpp" \
@@ -474,7 +457,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/SourceControl/Private/SourceControlHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SourceControl/Private/SourceControlModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SourceControl/Private/SourceControlSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SourceControl/Private/Tests/SourceControlTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/StandaloneRenderer/Private/StandaloneRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/StandaloneRenderer/Private/Linux/OpenGL/SlateOpenGLContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/StandaloneRenderer/Private/Linux/OpenGL/SlateOpenGLViewport.cpp" \
@@ -502,14 +484,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/StandaloneRenderer/Private/ios/SlateOpenGLViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SuperSearch/Private/SSuperSearch.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/SuperSearch/Private/SuperSearchModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SynthBenchmark/Private/FractalBenchmark.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SynthBenchmark/Private/RayIntersectBenchmark.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/SynthBenchmark/Private/SynthBenchmarkPrivatePCH.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/SuperSearch/Private/SuperSearchStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TargetDeviceServices/Private/TargetDeviceProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TargetDeviceServices/Private/TargetDeviceProxyManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TargetDeviceServices/Private/TargetDeviceService.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TargetDeviceServices/Private/TargetDeviceServiceManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TargetDeviceServices/Private/TargetDeviceServicesModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/TargetPlatform/Private/InstalledPlatformInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TargetPlatform/Private/TargetPlatformManagerModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TaskGraph/Private/SBarVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/TaskGraph/Private/SEventsTree.cpp" \
@@ -534,6 +515,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/TemplatedClassInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/TemplatedFunctionInstance_Explicit.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/TemplatedFunctionInstance_Implicit.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/ThreadSafety.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/UnrealCodeAnalyzerTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/UseClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/UseClassStaticField.cpp" \
@@ -544,9 +526,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/UseFunction.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/UseIfMacro.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/UnrealCodeAnalyzerTests/Private/UseVariable.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/WidgetCarousel/Private/SCarouselNavigationBar.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/WidgetCarousel/Private/WidgetCarouselModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/WidgetCarousel/Private/WidgetCarouselStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/VulkanShaderFormat/Private/VulkanBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/VulkanShaderFormat/Private/VulkanGlslangBridge.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/VulkanShaderFormat/Private/VulkanShaderCompiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/VulkanShaderFormat/Private/VulkanShaderFormat.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Windows/ShaderFormatD3D/Private/D3D11ShaderCompiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Windows/ShaderFormatD3D/Private/ShaderFormatD3D.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/Windows/WindowsClientTargetPlatform/Private/WindowsClientTargetPlatformModule.cpp" \
@@ -561,10 +544,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Developer/iOS/IOSTargetPlatform/Private/IOSTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/iOS/IOSTargetPlatform/Private/Mac/IOSDeviceHelperMac.cpp" \
 	"$$unrealRootPath/Engine/Source/Developer/iOS/IOSTargetPlatform/Private/Windows/IOSDeviceHelperWindows.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/iOS/MetalShaderFormat/Private/MetalBackend.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/iOS/MetalShaderFormat/Private/MetalShaderCompiler.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/iOS/MetalShaderFormat/Private/MetalShaderFormat.cpp" \
-	"$$unrealRootPath/Engine/Source/Developer/iOS/MetalShaderFormat/Private/MetalUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Developer/iOS/TVOSTargetPlatform/Private/TVOSTargetPlatformModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/AIGraph.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/AIGraphConnectionDrawingPolicy.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/AIGraphEditor.cpp" \
@@ -572,6 +552,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/AIGraphNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/AIGraphSchema.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/AIGraphTypes.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/K2Node_AIMoveTo.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/SGraphEditorActionMenuAI.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AIGraph/Private/SGraphNodeAI.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ActorPickerMode/Private/ActorPickerMode.cpp" \
@@ -587,9 +568,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/AddContentDialog/Private/ViewModels/AddContentWidgetViewModel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AddContentDialog/Private/ViewModels/CategoryViewModel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AddContentDialog/Private/ViewModels/ContentSourceViewModel.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Classes/AnimGraphNode_AssetPlayerBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimBlueprintNodeOptionalPinManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_AimOffsetLookAt.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_AnimDynamics.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_ApplyAdditive.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_ApplyMeshSpaceAdditive.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_AssetPlayerBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_Base.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_BlendListBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_BlendListByBool.cpp" \
@@ -601,17 +587,29 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_BoneDrivenController.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_ComponentToLocalSpace.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_CopyBone.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_CopyBoneDelta.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_CopyPoseFromMesh.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_CurveSource.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_CustomTransitionResult.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_Fabrik.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_HandIKRetargeting.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_IdentityPose.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_LayeredBoneBlend.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_LegIK.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_LocalRefPose.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_LocalToComponentSpace.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_LookAt.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_MeshRefPose.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_ModifyBone.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_ModifyCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_MultiWayBlend.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_ObserveBone.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_PoseBlendNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_PoseByName.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_PoseDriver.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_PoseHandler.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_PoseSnapshot.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_RandomPlayer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_RefPoseBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_Root.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_RotateRootBone.cpp" \
@@ -626,13 +624,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_StateMachine.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_StateMachineBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_StateResult.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_SubInput.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_SubInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_Trail.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_TransitionPoseEvaluator.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_TransitionResult.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_TwistCorrectiveNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_TwoBoneIK.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_TwoWayBlend.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_UseCachedPose.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimGraphNode_WheelHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimPreviewInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimStateConduitNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimStateEntryNode.cpp" \
@@ -652,6 +652,69 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/AnimationTransitionSchema.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/K2Node_AnimGetter.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/K2Node_TransitionRuleGetter.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/AnimNodeEditMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/AnimNodeEditModes.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/FabrikEditMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/ModifyBoneEditMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/ObserveBoneEditMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/PoseDriverEditMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimGraph/Private/EditModes/TwoBoneIKEditMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationBlueprintEditor/Private/AnimationBlueprintEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationBlueprintEditor/Private/AnimationBlueprintEditorMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationBlueprintEditor/Private/AnimationBlueprintEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationEditor/Private/AnimationEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationEditor/Private/AnimationEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationEditor/Private/AnimationEditorMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AnimationEditor/Private/AnimationEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AudioEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SGraphNodeSoundBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SGraphNodeSoundResult.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SSoundClassActionMenu.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SSoundCuePalette.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SSoundSubmixActionMenu.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundClassEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundClassEditorUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundClassGraph.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundClassGraphNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundClassGraphSchema.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueEditorUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraph.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraphConnectionDrawingPolicy.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraphEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraphNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraphNode_Base.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraphNode_Root.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundCueGraphSchema.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundSubmixEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundSubmixEditorUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundSubmixGraph.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundSubmixGraphNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/SoundSubmixGraphSchema.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_DialogueWave.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_ReverbEffect.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundAttenuation.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundClass.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundConcurrency.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundCue.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundEffectPreset.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundMix.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundSubmix.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/AssetTypeActions/AssetTypeActions_SoundWave.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/DialogueVoiceFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/DialogueWaveFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/ReimportSoundFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/ReimportSoundSurroundFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/ReverbEffectFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundAttenuationFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundClassFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundConcurrencyFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundCueFactoryNew.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundMixFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundSubmixFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/AudioEditor/Private/Factories/SoundSurroundFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BehaviorTreeEditor/Private/AssetTypeActions_BehaviorTree.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BehaviorTreeEditor/Private/AssetTypeActions_Blackboard.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BehaviorTreeEditor/Private/BehaviorTreeConnectionDrawingPolicy.cpp" \
@@ -719,12 +782,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/EdGraphSchema_K2_Actions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/EventEntryHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_AIMoveTo.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_ActorBoundEvent.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_AddComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_AssignDelegate.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_AssignmentStatement.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_BaseAsyncTask.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_BitmaskLiteral.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_BreakStruct.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_CallArrayFunction.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_CallDataTableFunction.cpp" \
@@ -739,6 +802,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_Composite.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_ConstructObjectFromClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_ConvertAsset.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_Copy.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_CreateDelegate.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_CustomEvent.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_DeadClass.cpp" \
@@ -758,6 +822,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_FunctionResult.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_FunctionTerminator.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_GenericCreateObject.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_GetArrayItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_GetClassDefaults.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_GetDataTableRow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_GetEnumeratorName.cpp" \
@@ -784,6 +849,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_MacroInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_MakeArray.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_MakeStruct.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_MakeVariable.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_MathExpression.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_MatineeController.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_Message.cpp" \
@@ -806,6 +872,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_TemporaryVariable.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_Timeline.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_Tunnel.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_TunnelBoundary.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_Variable.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_VariableGet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/BlueprintGraph/Private/K2Node_VariableSet.cpp" \
@@ -840,13 +907,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Cascade/Private/Tests/ParticleSystemTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ClassViewer/Private/ClassViewerModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ClassViewer/Private/ClassViewerNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ClassViewer/Private/ClassViewerProjectSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ClassViewer/Private/SClassViewer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ClassViewer/Private/UnloadedBlueprintData.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/AudioComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/ComponentVisualizers.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/ConstraintComponentVisualizer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/DecalComponentVisualizer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/PhysicalAnimationComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/PointLightComponentVisualizer.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/PrimitiveComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/RadialForceComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/SensingComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/SplineComponentVisualizer.cpp" \
@@ -854,6 +922,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/SpotLightComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/SpringArmComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/SpringComponentVisualizer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ComponentVisualizers/Private/StereoLayerComponentVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ConfigEditor/Private/ConfigEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ConfigEditor/Private/ConfigPropertyHelper.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ConfigEditor/Private/SConfigEditor.cpp" \
@@ -889,11 +958,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/ContentBrowser/Private/SPathView.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ContentBrowser/Private/SThumbnailEditModeTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ContentBrowser/Private/SourcesViewWidgets.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/CookingStats/Private/CookingStats.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/CookingStats/Private/CookingStatsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/CurveAssetEditor/Private/CurveAssetEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/CurveAssetEditor/Private/CurveAssetEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/CurveTableEditor/Private/CurveTableEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/CurveTableEditor/Private/CurveTableEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/CurveTableEditor/Private/CurveTableEditorHandle.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/CurveTableEditor/Private/CurveTableEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DataTableEditor/Private/DataTableEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DataTableEditor/Private/DataTableEditorModule.cpp" \
@@ -909,8 +978,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AnimMontageSegmentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AnimSequenceDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AnimStateNodeDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AnimTrailNodeDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AnimTransitionNodeDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AnimationAssetDetail.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AssetImportDataCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AssetViewerSettingsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AttenuationSettingsCustomizations.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AudioSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/AutoReimportDirectoryCustomization.cpp" \
@@ -919,8 +991,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/BodySetupDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/BrushDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CameraDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CameraFilmbackSettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CameraFocusSettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CameraLensSettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CaptureResolutionCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CaptureTypeCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CollisionProfileDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/CollisionProfileNameCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ColorGradingVectorCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ColorStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ComponentMaterialCategory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ComponentTransformDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ConfigEditorPropertyDetails.cpp" \
@@ -946,22 +1025,31 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/GuidStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/HardwareTargetingSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/HierarchicalSimplificationCustomizations.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ImportantToggleSettingCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/InputSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/InputStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/IntervalStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/KeyStructCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/LevelSequenceBurnInOptionsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/LightComponentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MacTargetSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MarginCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MaterialAttributePropertyDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MaterialProxySettingsCustomizations.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MathStructCustomizations.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MathStructProxyCustomizations.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MatineeActorDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MediaPlayerCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MediaSoundWaveCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MediaTextureCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MeshComponentDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MeshMergingSettingsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MobilityCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MoviePlayerSettingsDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneBindingOverrideDataCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneCaptureCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneCurveInterfaceKeyEditStructCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneEvalOptionsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneEventParametersCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneObjectBindingPtrCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/MovieSceneSequencePlaybackSettingsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/NavAgentSelectorCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/NavLinkStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ParticleModuleDetails.cpp" \
@@ -970,12 +1058,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/PhysicsConstraintComponentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/PhysicsSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/PointLightComponentDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/PoseAssetDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/PostProcessSettingsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/PrimitiveComponentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/RangeStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/RawDistributionVectorStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/ReflectionCaptureDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/RenderPassesCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/RigDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/RotatorStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SceneCaptureDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SceneComponentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SkeletalControlNodeDetails.cpp" \
@@ -987,8 +1078,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SlateColorCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SlateFontInfoCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SlateSoundCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SoundBaseDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SoundWaveDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SourceCodeAccessSettingsDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/SplineComponentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/StaticMeshActorDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/StaticMeshComponentDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/StringAssetReferenceCustomization.cpp" \
@@ -996,9 +1089,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/TextCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/TextureLODSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/TimespanStructCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/TransitionPoseEvaluatorNodeDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/VehicleTransmissionDataCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/WheeledVehicleMovementComponent4WDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/Vector4StructCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/VectorStructCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/WindowsTargetSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DetailCustomizations/Private/WorldSettingsDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/DeviceProfileEditor/Private/DeviceProfileConsoleVariableColumn.cpp" \
@@ -1038,6 +1130,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/EditorWidgets/Private/SAssetSearchBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/EditorWidgets/Private/SDropTarget.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/EditorWidgets/Private/SObjectNameEditableTextBox.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/EditorWidgets/Private/STextPropertyEditableTextBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/EditorWidgets/Private/STransportControl.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/EnvironmentQueryEditor/Private/AssetTypeActions_EnvironmentQuery.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/EnvironmentQueryEditor/Private/EdGraphSchema_EnvironmentQuery.cpp" \
@@ -1076,6 +1169,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/FoliageEdit/Private/SFoliagePalette.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/FontEditor/Private/FontEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/FontEditor/Private/FontEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/FontEditor/Private/FontFaceDetailsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/FontEditor/Private/SCompositeFontEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/FontEditor/Private/SFontEditorViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GameProjectGeneration/Private/DefaultTemplateProjectDefs.cpp" \
@@ -1089,47 +1183,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/GameProjectGeneration/Private/SVerbChoiceDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GameProjectGeneration/Private/TemplateProjectDefs.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GameProjectGeneration/Private/Tests/GameProjectAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/AssetTypeActions_GameplayAbilitiesBlueprint.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/AssetTypeActions_GameplayEffect.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/AttributeDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayAbilitiesBlueprintFactory.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayAbilitiesEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayAbilitiesEditorModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayAbilityGraph.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayAbilityGraphSchema.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayEffectDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayEffectExecutionDefinitionDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayEffectExecutionScopedModifierInfoDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/GameplayEffectModifierMagnitudeDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/InheritableGameplayTagContainerDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/K2Node_GameplayCueEvent.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/K2Node_GameplayEffectVariable.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/K2Node_LatentAbilityCall.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/SGameplayAttributeGraphPin.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/SGameplayAttributeWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/SGameplayCueEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayAbilitiesEditor/Private/SGraphNodeK2GameplayEffectVar.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/AssetTypeActions_GameplayTagAssetBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagContainerCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagQueryCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsEditorModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_LiteralGameplayTag.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagAssetInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagAssetInterfaceSingleTags.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagContainer.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagContainerSingleTags.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_SwitchGameplayTag.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/GameplayTagsK2Node_SwitchGameplayTagContainer.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/SGameplayTagContainerGraphPin.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/SGameplayTagGraphPin.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/SGameplayTagQueryGraphPin.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/SGameplayTagQueryWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/SGameplayTagWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GameplayTagsEditor/Private/SGraphNode_MultiCompareGameplayTag.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GameplayTasksEditor/Private/GameplayTasksEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GameplayTasksEditor/Private/K2Node_LatentGameplayTaskCall.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GeometryCacheEd/Private/ActorFactoryGeometryCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GeometryCacheEd/Private/AssetTypeActions_GeometryCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GeometryCacheEd/Private/GeometryCacheAssetBroker.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GeometryCacheEd/Private/GeometryCacheEdModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GeometryCacheEd/Private/GeometryCacheThumbnailRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GeometryCacheEd/Private/GeometryCacheThumbnailScene.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GeometryMode/Private/EditorGeometry.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GeometryMode/Private/GeometryEdMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GeometryMode/Private/GeometryMode.cpp" \
@@ -1162,8 +1223,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/SGraphPin.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/SGraphPreviewer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/SNodePanel.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/SoundCueGraphConnectionDrawingPolicy.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/StateMachineConnectionDrawingPolicy.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/AnimationNodes/SAnimationGraphNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/AnimationNodes/SGraphNodeAnimationResult.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/AnimationNodes/SGraphNodeLayeredBoneBlend.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/AnimationNodes/SGraphNodeSequencePlayer.cpp" \
@@ -1175,9 +1236,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/KismetNodeInfoContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeCallParameterCollectionFunction.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeFormatText.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2ArrayFunction.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Base.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Composite.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Copy.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2CreateDelegate.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Default.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Event.cpp" \
@@ -1185,6 +1246,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Terminator.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Timeline.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeK2Var.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeMakeStruct.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeSpawnActor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeSpawnActorFromClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/KismetNodes/SGraphNodeSwitchStatement.cpp" \
@@ -1211,14 +1273,19 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/MaterialNodes/SGraphNodeMaterialResult.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/MaterialPins/SGraphPinMaterialInput.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/NiagaraPins/SGraphPinVector4.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/SoundNodes/SGraphNodeSoundBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/GraphEditor/Private/SoundNodes/SGraphNodeSoundResult.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/HardwareTargeting/Private/HardwareTargetingModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/HardwareTargeting/Private/HardwareTargetingSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/HLODOutliner.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/HLODOutlinerDragDrop.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/HLODSelectionActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/HLODTreeWidgetItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/HierarchicalLODOutlinerModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/LODActorItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/LODLevelItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/HierarchicalLODOutliner/Private/StaticMeshActorItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/InputBindingEditor/Private/InputBindingEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/InputBindingEditor/Private/Widgets/SChordEditBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/InputBindingEditor/Private/Widgets/SChordEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/InputBindingEditor/Private/Widgets/SChordTreeItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/InputBindingEditor/Private/Widgets/SInputBindingEditorPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/IntroTutorials/Private/ClassTypeActions_EditorTutorial.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/IntroTutorials/Private/EditorTutorial.cpp" \
@@ -1247,6 +1314,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BPDelegateDragDropAction.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BPFunctionDragDropAction.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BPVariableDragDropAction.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BitmaskLiteralDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintActionMenuBuilder.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintActionMenuItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintActionMenuUtils.cpp" \
@@ -1260,13 +1328,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintEditorTabs.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintEditorViewportContextMenuExtender.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintPaletteFavorites.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/BlueprintWarningsConfigurationPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/DetailsDiff.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/DiffUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/FiBSearchInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/FindInBlueprintManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/FindInBlueprints.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/FormatTextDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/ImaginaryBlueprintData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/InstancedStaticMeshSCSEditorCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/NativeCodeGenerationTool.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SBlueprintActionMenu.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SBlueprintContextTargetMenu.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SBlueprintDiff.cpp" \
@@ -1283,6 +1353,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SGraphTitleBar.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SKismetInspector.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SMyBlueprint.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SReplaceNodeReferences.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SSCSEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/SSCSEditorViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/STimelineEditor.cpp" \
@@ -1292,6 +1363,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Debugging/KismetDebugCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Debugging/SKismetDebuggingView.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Nodes/K2Node_AsyncAction.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/BPProfilerStatisticWidgets.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/BlueprintProfilerSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/EventExecution.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/SBlueprintProfilerToolbar.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/SBlueprintProfilerView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/SGraphExecutionStatDisplay.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/SLeastPerformantDisplay.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/SProfilerOverview.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/SProfilerStatExpander.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Profiler/ScriptPerfData.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/Tests/BlueprintEditorTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/WorkflowOrientedApp/SContentReference.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/WorkflowOrientedApp/SModeWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Kismet/Private/WorkflowOrientedApp/WorkflowTabFactory.cpp" \
@@ -1316,6 +1398,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModeBrushes.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModeComponentTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModeErosionTools.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModeMirrorTool.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModePaintTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModeRampTool.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEdModeSplineTools.cpp" \
@@ -1332,6 +1415,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEditorDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeEditorObject.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeFileFormatPng.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeFileFormatRaw.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeSplineDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/LandscapeSplineImportExport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LandscapeEditor/Private/SLandscapeEditor.cpp" \
@@ -1358,6 +1443,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportActions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportLayout.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportLayout2x2.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportLayoutEntity.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportLayoutFourPanes.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportLayoutOnePane.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/LevelViewportLayoutThreePanes.cpp" \
@@ -1374,19 +1460,20 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/SLevelViewportControlsPopup.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/SLevelViewportToolBar.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/SSurfaceProperties.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/LevelEditor/Private/SToolkitDisplay.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/LocalizationCommandletExecution.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/LocalizationCommandletTasks.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/LocalizationConfigurationScript.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/LocalizationModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/LocalizationSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/LocalizationTargetTypes.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Localization/Private/SCulturePicker.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/GatherTextDetailCustomizations.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/LocalizationDashboard.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/LocalizationDashboardModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/LocalizationDashboardSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/LocalizationDashboardSettingsDetailCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/LocalizationTargetDetailCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/LocalizationTargetSetDetailCustomization.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/SCulturePicker.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationDashboardTargetRow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/LocalizationDashboard/Private/SLocalizationTargetEditorCultureRow.cpp" \
@@ -1419,7 +1506,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineeModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineeOptions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineePropertyWindow.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineeRecordMovie.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineeToolbars.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineeTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Matinee/Private/MatineeTrackHelpers.cpp" \
@@ -1437,48 +1523,99 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/MeshPaint/Private/MeshPaintAdapterFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MeshPaint/Private/MeshPaintEdMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MeshPaint/Private/MeshPaintModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MeshPaint/Private/MeshPaintSplineMeshAdapter.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MeshPaint/Private/MeshPaintStaticMeshAdapter.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MeshPaint/Private/SMeshPaint.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/AssetTypeActions_MovieScene.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/K2Node_PlayMovieScene.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MovieSceneFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneCaptureDialog/Private/MovieSceneCaptureDialogModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/K2Node_GetSequenceBindings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MatineeImportTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MovieSceneToolHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MovieSceneToolsModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MovieSceneToolsProjectSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MovieSceneToolsProjectSettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/MovieSceneToolsUserSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/PropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/BoolKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/ByteKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/EnumKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/FloatCurveKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/IntegerKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/IntegralKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/NameCurveKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyAreas/StringCurveKeyArea.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors/SBoolCurveKeyEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors/SEnumCurveKeyEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors/SFloatCurveKeyEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors/SIntegralCurveKeyEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/AnimationTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/CurveKeyEditors/SStringCurveKeyEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/ActorReferencePropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/BoolPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/BytePropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/CameraCutSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/CinematicShotSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/ColorPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/EventTrackSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/FloatPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/IntegerPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/LevelVisibilitySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/ParameterSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/StringPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/ThumbnailSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/VectorPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/Sections/VisibilityPropertySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditorThumbnail/TrackEditorThumbnail.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditorThumbnail/TrackEditorThumbnailPool.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/ActorPickerTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/AttachTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/AudioTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/CameraAnimTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/CameraCutTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/CameraShakeTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/CinematicShotTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/EventTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/FadeTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/LevelVisibilityTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/MaterialTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/ParticleParameterTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/ParticleTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PathTrackEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/ShotTrackEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/SubMovieSceneTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/SkeletalAnimationTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/SlomoTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/SpawnTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/SubTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/TransformTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/ActorReferencePropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/BoolPropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/BytePropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/ColorPropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/FloatPropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/IntegerPropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/StringPropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/VectorPropertyTrackEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/MovieSceneTools/Private/TrackEditors/PropertyTrackEditors/VisibilityPropertyTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NewLevelDialog/Private/NewLevelDialogModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/NewsFeed/Private/NewsFeedClasses.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/NewsFeed/Private/NewsFeedModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/NewsFeed/Private/Implementation/CdnNewsFeedTitleFile.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/NewsFeed/Private/Implementation/LocalNewsFeedTitleFile.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/NewsFeed/Private/Implementation/NewsFeedCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/NewsFeed/Private/Widgets/SNewsFeed.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/EdGraphSchema_Niagara.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraCompiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraCompiler_VectorVM.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraEditorCommon.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraEffectEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraEffectFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraEmitterPropertiesDetailsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNodeFunctionCall.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNodeInput.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNodeOp.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNodeOutput.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNodeReadDataSet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraNodeWriteDataSet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraScriptFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraScriptSource.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/NiagaraSequencer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/SNiagaraEffectEditorViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/SNiagaraEffectEditorWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/K2Node_InAppPurchase.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/K2Node_InAppPurchaseQuery.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/K2Node_InAppPurchaseRestore.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/K2Node_LatentOnlineCall.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/K2Node_LeaderboardFlush.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/K2Node_LeaderboardQuery.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/OnlineBlueprintSupport/Private/OnlineBlueprintSupportModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/AssetTypeActions/AssetTypeActions_NiagaraEffect.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/NiagaraEditor/Private/AssetTypeActions/AssetTypeActions_NiagaraScript.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PListEditor/Private/PListEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PListEditor/Private/PListNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PListEditor/Private/PListNodeArray.cpp" \
@@ -1496,20 +1633,30 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimViewportMenuCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimViewportPlaybackCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimViewportShowCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimationBlendSpace1DHelpers.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimationBlendSpaceHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimationEditorPreviewScene.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimationEditorViewportClient.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/ApexClothingOptionWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AssetSearchBoxUtilPersona.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/BoneMappingHelper.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/CurveViewerCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/EditorObjectsTracker.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Persona.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaAssetFamily.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaAssetFamilyManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaEditorModeManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaMeshDetails.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaToolkit.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PersonaUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PoseEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PreviewSceneCustomizations.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimBlueprintParentPlayerList.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimCompositeEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimCompositePanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimCurveEd.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimCurvePanel.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimCurveViewer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimEditorBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimMontagePanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimMontageScrubPanel.cpp" \
@@ -1523,13 +1670,16 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationBlendSpace.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationBlendSpace1D.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationBlendSpaceBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationBlendSpaceGridWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationDlgs.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationEditorViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationScrubPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAnimationSequenceBrowser.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SAssetFamilyShortcutBar.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SMontageEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SMorphTargetViewer.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SPersonaToolbar.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SPersonaDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SPoseEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SRetargetManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SRetargetSourceWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SRigPicker.cpp" \
@@ -1537,25 +1687,19 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SSequenceEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SSkeletonAnimNotifies.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SSkeletonSlotNames.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SSkeletonSmartNameManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SSkeletonTree.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SSlotNameReferenceWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/STimingTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/STrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SkeletalMeshSocketDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/SkeletonTreeCommands.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimationMode/AnimationMode.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/AnimationMode/SAnimAssetPropertiesEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/BlueprintMode/AnimBlueprintMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/TabSpawners.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Customization/AnimGraphNodeSlotDetails.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/MeshMode/MeshMode.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/MeshMode/SAdditionalMeshesEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/MeshMode/SMeshPropertiesEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/MeshMode/SMirrorSetupEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/PhysicsMode/PhysicsMode.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Shared/AnimationRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Customization/BlendParameterDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Customization/BlendSampleDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Customization/BlendSpaceDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Customization/InterpolationParameterDetails.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/EditModes/SkeletonSelectionEditMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Shared/BoneSelectionWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Persona/Private/Shared/PersonaMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Persona/Public/PersonaCommonCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PhAT/Private/PhAT.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PhAT/Private/PhATActions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PhAT/Private/PhATHitProxies.cpp" \
@@ -1566,9 +1710,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/PhAT/Private/SPhATNewAssetDlg.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PhAT/Private/SPhATPreviewToolbar.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PhAT/Private/SPhATPreviewViewport.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PixelInspector/Private/PixelInspector.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PixelInspector/Private/PixelInspectorDetailsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PixelInspector/Private/PixelInspectorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PixelInspector/Private/PixelInspectorResult.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PixelInspector/Private/PixelInspectorStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PixelInspector/Private/PixelInspectorView.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PlacementMode/Private/PlacementMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PlacementMode/Private/PlacementModeModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PlacementMode/Private/SPlacementModeTools.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PluginWarden/Private/PluginWardenModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PluginWarden/Private/SAuthorizingPlugin.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ProjectSettingsViewer/Private/ProjectSettingsViewerModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ProjectTargetPlatformEditor/Private/ProjectTargetPlatformEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ProjectTargetPlatformEditor/Private/ProjectTargetPlatformEditorWidgets.cpp" \
@@ -1582,6 +1734,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/DetailGroup.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/DetailItemNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/DetailLayoutBuilderImpl.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/DetailMultiTopLevelObjectRootNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/DetailPropertyRow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/ItemPropertyNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/ObjectPropertyNode.cpp" \
@@ -1625,7 +1778,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorDateTime.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorEditInline.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorInteractiveActorPicker.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorMap.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorNumeric.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorSceneDepthPicker.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorSet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorTableRow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorText.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyMenuActorPicker.cpp" \
@@ -1645,6 +1801,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/ReferenceViewer/Private/ReferenceViewerSchema.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ReferenceViewer/Private/SReferenceNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ReferenceViewer/Private/SReferenceViewer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SceneDepthPickerMode/Private/EditorModeSceneDepthPicker.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SceneDepthPickerMode/Private/SceneDepthPickerMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SceneOutliner/Private/ActorTreeItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SceneOutliner/Private/FolderTreeItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SceneOutliner/Private/SOutlinerTreeView.cpp" \
@@ -1657,48 +1815,116 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/SceneOutliner/Private/SceneOutlinerSortingTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SceneOutliner/Private/SceneOutlinerStandaloneTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SceneOutliner/Private/WorldTreeItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/ActorRecording.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/ActorRecordingDetailsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/ActorRecordingSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/AnimationRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/PropertiesToRecordForClassDetailsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SClassPropertyRecorderSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SCreateAnimationDlg.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SSequenceRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorderBlueprintLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorderCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorderDetailsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorderModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorderSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/SequenceRecorderUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/Sections/MovieScene3DTransformSectionRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/Sections/MovieSceneAnimationSectionRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/Sections/MovieSceneMultiPropertyRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorder/Private/Sections/MovieScenePropertyRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorderSections/Private/MovieScene3DAttachSectionRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorderSections/Private/MovieSceneParticleTrackSectionRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorderSections/Private/MovieSceneSpawnSectionRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorderSections/Private/MovieSceneVisibilitySectionRecorder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequenceRecorderSections/Private/SequenceRecorderSectionsModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/GroupedKeyArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/IntegralKeyDetailsCustomization.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/KeyPropertyParams.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SAnimationOutlinerView.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/LevelEditorSequencerIntegration.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SAnimationOutlinerTreeNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerCurveEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerCurveEditorToolBar.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerDebugVisualizer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerGotoBox.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerLabelBrowser.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerLabelEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerSectionAreaView.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerSectionOverlay.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerShotFilterOverlay.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerTrackArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerTrackLane.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerTrackOutliner.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SectionDragOperations.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SectionLayoutBuilder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerTransformBox.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SSequencerTreeView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SectionLayout.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/Sequencer.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerActorBindingManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerAssetEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerClipboardReconciler.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerCommonHelpers.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerContextMenus.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerCurveOwner.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerDisplayNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerDisplayNodeDragDropOp.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerEdMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerHotspots.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerLabelManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerMovieSceneObjectManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerNodeTree.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerObjectChangeListener.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerPossessedObject.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerSectionLayoutBuilder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerSectionPainter.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerSelection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerSelectionPreview.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerTrackLaneFactory.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/TimeSliderController.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SequencerWidgets/Private/STimeSlider.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerTimeSliderController.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerTimingManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/SequencerUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/VirtualTrackArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/DisplayNodes/SequencerDisplayNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/DisplayNodes/SequencerFolderNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/DisplayNodes/SequencerObjectBindingNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/DisplayNodes/SequencerSectionCategoryNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/DisplayNodes/SequencerSectionKeyAreaNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/DisplayNodes/SequencerTrackNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/Tools/EditToolDragOperations.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/Tools/SequencerEditTool_Movement.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/Tools/SequencerEditTool_Selection.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/Tools/SequencerEntityVisitor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/Sequencer/Private/Tools/SequencerSnapField.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequencerWidgets/Private/SSequencerTimeSlider.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequencerWidgets/Private/STimeRange.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SequencerWidgets/Private/STimeRangeSlider.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SequencerWidgets/Private/SequencerWidgetsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SizeMap/SSizeMap.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SizeMap/SizeMapActions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SizeMap/SizeMapModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundClassEditor/Private/SSoundClassActionMenu.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundClassEditor/Private/SoundClassEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundClassEditor/Private/SoundClassEditorModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundClassEditor/Private/SoundClassEditorUtilities.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundCueEditor/Private/SSoundCuePalette.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundCueEditor/Private/SoundCueEditor.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundCueEditor/Private/SoundCueEditorModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/SoundCueEditor/Private/SoundCueEditorUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletalMeshEditor/Private/MeshHierarchyCmd.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletalMeshEditor/Private/SkeletalMeshEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletalMeshEditor/Private/SkeletalMeshEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletalMeshEditor/Private/SkeletalMeshEditorMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletalMeshEditor/Private/SkeletalMeshEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/BoneProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/BoneProxyDetailsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/EditableSkeleton.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SBlendProfilePicker.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SSkeletonTree.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SSkeletonTreeRow.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonEditor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonEditorMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeAttachedAssetItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeBoneItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeBuilder.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeSocketItem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeSummoner.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/SkeletonEditor/Private/SkeletonTreeVirtualBoneItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SourceControlWindows/Private/SSourceControlHistory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SourceControlWindows/Private/SSourceControlRevert.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/SourceControlWindows/Private/SSourceControlSubmit.cpp" \
@@ -1750,7 +1976,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/TranslationEditor/Private/TranslationPickerFloatingWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/TranslationEditor/Private/TranslationPickerWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/TranslationEditor/Private/TranslationUnit.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UATHelper/UATHelperModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/AssetTypeActions_WidgetBlueprint.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/SlateVectorArtDataFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/UMGEditorActions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/UMGEditorModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/WidgetBlueprint.cpp" \
@@ -1764,8 +1992,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Animation/MarginTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Animation/Sequencer2DTransformTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Animation/UMGDetailKeyframeHandler.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Animation/UMGMovieSceneObjectManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Animation/UMGSequencerObjectBindingManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Animation/WidgetMaterialTrackEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/BlueprintModes/WidgetBlueprintApplicationMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/BlueprintModes/WidgetBlueprintApplicationModes.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/BlueprintModes/WidgetDesignerApplicationMode.cpp" \
@@ -1801,6 +2028,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Nodes/K2Node_CreateDragDropOperation.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Nodes/K2Node_CreateWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Palette/SPaletteView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Settings/UMGEditorProjectSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Settings/WidgetDesignerSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/TabFactory/AnimationTabSummoner.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/TabFactory/DesignerTabSummoner.cpp" \
@@ -1811,6 +2039,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Templates/WidgetTemplate.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Templates/WidgetTemplateBlueprintClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Templates/WidgetTemplateClass.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Templates/WidgetTemplateImageClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UMGEditor/Private/Utility/WidgetSlotPair.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UndoHistory/Private/UndoHistoryModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UndoHistory/Private/Widgets/SUndoHistory.cpp" \
@@ -1823,7 +2052,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AssetNotifications.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AssetSelection.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AssetThumbnail.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AssetViewerSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoSaveUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutomatedAssetImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/BSPOps.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/BusyCursor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/CameraController.cpp" \
@@ -1835,15 +2066,18 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ConsolidateWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ConvexDecompTool.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/CookOnTheFlyServer.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/CookerSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/CreditsScreen.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/CubemapUnwrapUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/CurveEditorSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DataTableEditorUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DebugToolExec.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DistanceFieldBuildNotification.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DragTool_BoxSelect.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DragTool_FrustumSelect.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DragTool_Measure.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/DragTool_ViewportChange.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EdGraphNode_Comment.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EdGraphToken.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EdGraphUtilities.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EdMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Editor.cpp" \
@@ -1868,6 +2102,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorLevelUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorModeInterpolation.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorModeManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorModeRegistry.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorModeTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorModes.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorObject.cpp" \
@@ -1876,14 +2111,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorServer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorShowFlags.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorTransaction.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorUndoClient.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorViewportClient.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorViewportCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/EditorWorldManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/FbxAnimUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/FbxMeshUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/FeedbackContextEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/FileHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/GeomFitUtils.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/GeomTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/GlobalEditorNotification.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/GraphEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/GrassRenderingNotification.cpp" \
@@ -1902,6 +2138,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialGraphNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialGraphNode_Base.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialGraphNode_Comment.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialGraphNode_Knot.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialGraphNode_Root.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialGraphSchema.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MeshPaintRendering.cpp" \
@@ -1926,6 +2163,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ReferenceInfoUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ReferencedAssetsUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/RichCurveEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SAdvancedPreviewDetailsTab.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SCSVImportOptions.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SClassPickerDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SColorGradientEditor.cpp" \
@@ -1950,15 +2188,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ShaderCompilingNotification.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SkeletalMeshEdit.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SnappingUtils.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundClassGraph.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundClassGraphNode.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundClassGraphSchema.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundCueGraph.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundCueGraphEditorCommands.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundCueGraphNode.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundCueGraphNode_Base.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundCueGraphNode_Root.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SoundCueGraphSchema.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/SourceCodeNavigation.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/StaticMeshEdit.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/TemplateMapMetadata.cpp" \
@@ -1967,8 +2196,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/TextureStreamingNotification.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ThumbnailHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ThumbnailManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UnrealEd.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UnrealEdEngine.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UnrealEdGlobals.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UnrealEdMisc.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UnrealEdSrv.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UnrealEdTypes.cpp" \
@@ -1976,22 +2205,23 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/UserDefinedStructEditorData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Utils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/VertexSnapping.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Analytics/AnalyticsPrivacySettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Analytics/EditorAnalytics.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/DebugSkelMeshComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorAnimBaseObj.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorAnimCompositeSegment.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorAnimCurveBoneLinks.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorAnimSegment.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorCompositeSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorNotifyObject.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorParentPlayerListObj.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/EditorSkeletonNotifyObj.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Animation/VertexAnimTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoReimport/AssetSourceFilenameCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoReimport/AutoReimportManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoReimport/AutoReimportTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoReimport/AutoReimportUtilities.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoReimport/ContentDirectoryMonitor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/AutoReimport/ReimportFeedbackContext.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/AudioMixerCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/AudioTestCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ChunkDependencyInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ChunkManifestGenerator.cpp" \
@@ -2000,10 +2230,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/CookCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/DerivedDataCacheCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/DiffAssetsCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/DiffFilesCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/DiffPackagesCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/DumpBlueprintsInfoCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/DumpHiddenCategoriesCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ExportDialogueScriptCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/FileServerCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/FixupNeedsLoadForEditorGameCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/FixupRedirectsCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/GatherTextCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/GatherTextCommandletBase.cpp" \
@@ -2016,15 +2249,22 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/GenerateGatherManifestCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/GenerateTextLocalizationReportCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/GenerateTextLocalizationResourceCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ImportAssetsCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ImportDialogueScriptCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ImportLocalizedDialogueCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/InternationalizationConditioningCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/InternationalizationExportCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/NativeCodeGenCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/PackageUtilities.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/ParticleSystemAuditCommandlet.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/RepairLocalizationDataCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/PopulateDialogueWaveFromCharacterSheetCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/StabilizeLocalizationKeys.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/SwapSoundForDialogueInCuesCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Commandlets/UpdateGameProjectCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/Dialogs.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/DlgMoveAssets.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/DlgPickAssetPath.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/DlgPickPath.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/DlgReferenceTree.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/SBuildProgress.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Dialogs/SDeleteAssetsDialog.cpp" \
@@ -2043,9 +2283,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/Factory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/HDRLoader.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/IESLoader.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/NiagaraEffectFactory.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/NiagaraScriptFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/PackFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/PoseAssetFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/SkeletalMeshImport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/SkeletonFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Factories/SlateBrushAssetFactory.cpp" \
@@ -2057,6 +2296,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxAnimSequenceImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxAnimationExport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxAssetImportData.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxCurveDataImport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxLightImport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxMainExport.cpp" \
@@ -2065,6 +2305,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxMatineeImport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxMeshImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxOptionWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSceneImportData.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSceneImportFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSceneImportOptions.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSceneImportOptionsSkeletalMesh.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSceneImportOptionsStaticMesh.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSkeletalMeshExport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSkeletalMeshImport.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxSkeletalMeshImportData.cpp" \
@@ -2072,6 +2317,16 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxStaticMeshImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxTextureImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/FbxUtilsImport.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/ReimportFbxSceneFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SFbxSceneOptionWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneBaseMeshListView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneImportNodeTreeView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneImportStaticMeshListView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneMaterialsListView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneReimportNodeTreeView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneReimportSkeletalMeshListView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneReimportStaticMeshListView.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Fbx/SSceneSkeletalMeshListView.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Features/EditorFeatures.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Kismet2/BlueprintEditorUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Kismet2/CompilerResultsLog.cpp" \
@@ -2089,17 +2344,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Lightmass/LightmassRender.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Localization/PortableObjectFormatDOM.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/MaterialEditor/MaterialEditorMeshComponent.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/EdGraphSchema_Niagara.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraEditorCommon.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNode.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeConstant.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeFunctionCall.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeGetAttr.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeInput.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeOp.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeOutput.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraNodeOutputUpdate.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Niagara/NiagaraScriptSource.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Settings/EditorPerProjectUserSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Settings/EditorProjectSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Settings/EditorSettings.cpp" \
@@ -2110,16 +2354,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/StaticLightingSystem/StaticLightingTextureMapping.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/AutomationEditorCommon.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/AutomationEditorPromotionCommon.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/BlueprintAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/CollisionAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/EditorAssetAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/EditorAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/EditorBuildPromotionTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/EditorOpenAssetAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/EditorPerformanceTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/FeaturePackAutomationTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/GeometryTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/LightingTests.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Tests/FbxAutomationCommon.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ThumbnailRendering/AnimBlueprintThumbnailRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ThumbnailRendering/AnimSequenceThumbnailRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/ThumbnailRendering/BlendSpaceThumbnailRenderer.cpp" \
@@ -2149,16 +2384,51 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/AssetEditorToolkit.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/BaseToolkit.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/GlobalEditorCommonCommands.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/SAssetEditorCommon.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/SGlobalOpenAssetDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/SGlobalTabSwitchingDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/SimpleAssetEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Private/Toolkits/ToolkitManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Public/CurveEditorSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Editor/UnrealEd/Public/EditorModeRegistry.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UnrealEdMessages/Private/UnrealEdMessagesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/UserFeedback/Private/UserFeedback.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/SVRRadialPanel.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorActions.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorAvatarActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorBaseActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorFloatingText.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorInteractor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorModeManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorMotionControllerInteractor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorWidgetComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/VREditorWorldInteraction.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Gizmo/VREditorPlaneTranslationGizmoHandle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Gizmo/VREditorRotationGizmoHandle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Gizmo/VREditorTransformGizmo.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Gizmo/VREditorTranslationGizmoHandle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Interactables/VREditorButton.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Teleporter/VREditorAutoScaler.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/Teleporter/VREditorTeleporter.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/UI/VREditorBaseUserWidget.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/UI/VREditorDockableWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/UI/VREditorFloatingUI.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/VREditor/UI/VREditorUISystem.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/MouseCursorInteractor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportDragOperation.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportInteractableInterface.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportInteractionInputProcessor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportInteractionModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportInteractor.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportWorldInteraction.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportWorldInteractionInterface.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/ViewportWorldInteractionManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/Gizmo/VIBaseTransformGizmo.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/Gizmo/VIGizmoHandle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/Gizmo/VIPivotTransformGizmo.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/Gizmo/VIStretchGizmoHandle.cpp" \
+	"$$unrealRootPath/Engine/Source/Editor/ViewportInteraction/Gizmo/VIUniformScaleGizmoHandle.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/ViewportSnapping/Private/ViewportSnappingModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/WorkspaceMenuStructure/Private/WorkspaceMenuStructureModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/WorldBrowser/Private/LevelCollectionModel.cpp" \
@@ -2182,11 +2452,18 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Editor/WorldBrowser/Private/Tiles/WorldTileModel.cpp" \
 	"$$unrealRootPath/Engine/Source/Editor/WorldBrowser/Private/Tiles/WorldTileThumbnails.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/BlankProgram/Private/BlankProgram.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/BuildPatchToolMain.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/BuildPatchTool.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/ToolMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/CompactifyMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/DiffManifestMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/EnumerationMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/MergeManifestMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/BuildPatchTool/Private/ToolModes/PatchGenerationMode.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashDescription.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashReportAnalytics.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashReportClient.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashReportClientApp.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashReportClientConfig.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashReportClientStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashReportClientUnattended.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/CrashReporter/CrashReportClient/Private/CrashUpload.cpp" \
@@ -2210,14 +2487,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/IOS/UnrealLaunchDaemon/Private/IOS/IOSLaunchDaemonView.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/DsymExporter/Private/DsymExporterApp.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/DsymExporter/Private/Mac/DsymExporterMainMac.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/Mac/ShaderCacheTool/Private/ShaderCacheTool.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/UE4EditorServices/Private/Linux/UE4EditorServicesMain.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/UE4EditorServices/Private/Mac/UE4EditorServicesAppDelegate.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/UE4EditorServices/Private/Mac/UE4EditorServicesMain.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/UE4EditorServices/Private/Windows/UE4EditorServicesMain.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/UnrealAtoS/Private/UnrealAtoSApp.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Mac/UnrealAtoS/Private/Mac/UnrealAtoSMainMac.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/ParallelExecutor/Private/BuildGraph.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/ParallelExecutor/Private/ParallelExecutor.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/ShaderCompileWorker/Private/ShaderCompileWorker.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/SlateViewer/Private/SlateViewerApp.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/SlateViewer/Private/IOS/IOSSlateViewerMain.cpp" \
@@ -2232,6 +2508,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/TestPAL/Private/Main.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/TestPAL/Private/Parent.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/TestPAL/Private/TestDirectoryWatcher.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/TestPAL/Private/Linux/OffscreenGL.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCEFSubProcess/Private/UnrealCEFSubProcess.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCEFSubProcess/Private/UnrealCEFSubProcessApp.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCEFSubProcess/Private/UnrealCEFSubProcessCallbackRegistry.cpp" \
@@ -2245,11 +2522,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Private/MacroCallback.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Private/Visitor.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Private/main.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Private/ThreadSafety/TSAction.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Private/ThreadSafety/TSConsumer.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Private/ThreadSafety/TSVisitor.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealCodeAnalyzer/Public/UnrealCodeAnalyzerPCH.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFileServer/Private/UnrealFileServer.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/UnrealFrontendMain.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/Commands/DeployCommand.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/Commands/LaunchCommand.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/Commands/LaunchFromProfileCommand.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/Commands/PackageCommand.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/Commands/StatsConvertCommand.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealFrontend/Private/Commands/StatsDumpMemoryCommand.cpp" \
@@ -2262,8 +2543,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/ClassMaps.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/Classes.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/CodeGenerator.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/FileLineException.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/HeaderParser.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/HeaderProvider.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/IScriptGeneratorPluginInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/Manifest.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/ParserClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/ParserHelper.cpp" \
@@ -2272,6 +2555,36 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UnrealHeaderToolMain.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UnrealSourceFile.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/Specifiers/SpecifierArrays.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/ClassArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/ClassMetaDataArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/CompilerMetadataManagerArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/EnumArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/FieldArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/FileScopeArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/FunctionArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/HeaderProviderArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/ImplementedInterfaceArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/MetadataArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/MultipleInheritanceBaseClassArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/NameArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/ObjectBaseArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/PackageArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/PropertyArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/PropertyBaseArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/PropertyDataArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/RepRecordArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/ScopeArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/ScriptStructArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/StructArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/StructDataArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/StructScopeArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/TokenArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/TokenDataArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/TypeDefinitionInfoMapArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/UHTMakefile.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/UHTMakefileHeaderDescriptor.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/UHTMakefileModuleDescriptor.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealHeaderTool/Private/UHTMakefile/UnrealSourceFileArchiveProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/CPUSolver/CPUSolver.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/ImportExport/3DVisualizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/ImportExport/Exporter.cpp" \
@@ -2282,10 +2595,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/ImportExport/Mesh.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Launch/UnitTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Launch/UnrealLightmass.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Launch/stdafx.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/BSP.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/Cache.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/Collision.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/Embree.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/FinalGather.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/FluidSurface.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealLightmass/Private/Lighting/Landscape.cpp" \
@@ -2308,20 +2621,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealPak/Private/KeyGenerator.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealPak/Private/SignedArchiveWriter.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealPak/Private/UnrealPak.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/GUI.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/P4DataCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/P4Env.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/ProcessHelper.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/SettingsCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/SyncingThread.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/UnrealSync.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/Mac/UnrealSyncMainMac.cpp" \
-	"$$unrealRootPath/Engine/Source/Programs/UnrealSync/Private/Windows/UnrealSyncMainWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealVersionSelector/Private/PlatformInstallation.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealVersionSelector/Private/UnrealVersionSelector.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealVersionSelector/Private/GenericPlatform/GenericPlatformInstallation.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/UnrealVersionSelector/Private/Windows/WindowsPlatformInstallation.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealWatchdog/Private/UnrealWatchdog.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealWatchdog/Private/WatchdogAnalytics.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealWatchdog/Private/Linux/UnrealWatchdogMainLinux.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealWatchdog/Private/Mac/UnrealWatchdogMainMac.cpp" \
+	"$$unrealRootPath/Engine/Source/Programs/UnrealWatchdog/Private/Windows/UnrealWatchdogMainWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Programs/Windows/BootstrapPackagedGame/Private/BootstrapPackagedGame.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/AIConfig.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/AIController.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/AIInterfaces.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/AIModule.cpp" \
@@ -2331,6 +2641,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/AITypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BrainComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/DetourCrowdAIController.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GridPathAIController.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/VisualLoggerExtension.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Actions/PawnAction.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Actions/PawnAction_BlueprintBase.cpp" \
@@ -2390,8 +2701,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Services/BTService_BlackboardBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Services/BTService_BlueprintBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Services/BTService_DefaultFocus.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Services/BTService_RunEQS.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Tasks/BTTask_BlackboardBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Tasks/BTTask_BlueprintBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Tasks/BTTask_GameplayTaskBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Tasks/BTTask_MakeNoise.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Tasks/BTTask_MoveDirectlyToward.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/BehaviorTree/Tasks/BTTask_MoveTo.cpp" \
@@ -2409,6 +2722,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Blueprint/AIBlueprintHelperLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/DataProviders/AIDataProvider.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/DataProviders/AIDataProvider_QueryParams.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/DataProviders/AIDataProvider_Random.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/EQSRenderingComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/EQSTestingPawn.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/EnvQuery.cpp" \
@@ -2429,6 +2743,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_ActorsOfClass.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_BlueprintBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_Composite.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_Cone.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_CurrentLocation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_Donut.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_OnCircle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Generators/EnvQueryGenerator_PathingGrid.cpp" \
@@ -2443,13 +2759,26 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Distance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Dot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_GameplayTags.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Overlap.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Pathfinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_PathfindingBatch.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Project.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Random.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/EnvironmentQuery/Tests/EnvQueryTest_Trace.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_AI.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_BehaviorTree.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_EQS.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_NavLocalGrid.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_Navmesh.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/GameplayDebugger/GameplayDebuggerCategory_Perception.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/HotSpots/AIHotSpotManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/CrowdFollowingComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/CrowdManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/GridPathFollowingComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/MetaNavMeshPath.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/NavFilter_AIControllerDefault.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/NavLocalGridData.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/NavLocalGridManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/NavigationInterfaces.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Navigation/PathFollowingComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Perception/AIPerceptionComponent.cpp" \
@@ -2470,43 +2799,85 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Perception/AISightTargetInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Perception/PawnSensingComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Tasks/AITask.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Tasks/AITask_LockLogic.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AIModule/Private/Tasks/AITask_MoveTo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/ALAudio/Private/ALAudioBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/ALAudio/Private/ALAudioDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/ALAudio/Private/ALAudioSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ActorSequence/Private/ActorSequence.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ActorSequence/Private/ActorSequenceComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ActorSequence/Private/ActorSequenceObjectReference.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ActorSequence/Private/ActorSequencePlayer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Advertising/Advertising/Private/Advertising.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Advertising/Android/AndroidAdvertising/Private/AndroidAdvertising.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Advertising/IOS/IOSAdvertising/Private/IOSAdvertising.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Analytics/Analytics/Private/Analytics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Analytics/AnalyticsET/Private/AnalyticsET.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Analytics/AnalyticsET/Private/HttpServiceTracker.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Analytics/AnalyticsET/Private/IAnalyticsProviderET.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Analytics/AnalyticsSwrve/Private/AnalyticsSwrve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Analytics/AnalyticsVisualEditing/Private/AnalyticsVisualEditing.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Analytics/QoSReporter/Private/QoSReporter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Analytics/QoSReporter/Private/QoSReporterModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Android/AndroidAudio/Private/AndroidAudioBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Android/AndroidAudio/Private/AndroidAudioDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Android/AndroidAudio/Private/AndroidAudioSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Android/AndroidLocalNotification/Private/AndroidLocalNotification.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Android/AndroidRuntimeSettings/Private/AndroidRuntimeSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Android/AndroidRuntimeSettings/Private/AndroidRuntimeSettingsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimGraphRuntimeModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimSequencerInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimSequencerInstanceProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimationCustomVersion.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_AimOffsetLookAt.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_ApplyAdditive.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_BlendListBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_BlendListByBool.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_BlendListByEnum.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_BlendListByInt.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_BlendSpaceEvaluator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_BlendSpacePlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_CopyPoseFromMesh.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_CurveSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_LayeredBoneBlend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_ModifyCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_MultiWayBlend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_PoseBlendNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_PoseByName.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_PoseDriver.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_PoseHandler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_PoseSnapshot.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_RandomPlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_RefPose.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_Root.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_RotateRootBone.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_RotationOffsetBlendSpace.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_SequenceEvaluator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_Slot.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/AnimNodes/AnimNode_TwoWayBlend.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNodeRotationMultiplier.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_AnimDynamics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_BoneDrivenController.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_CopyBone.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_CopyBoneDelta.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_Fabrik.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_HandIKRetargeting.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_LegIK.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_LookAt.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_ModifyBone.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_ObserveBone.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_SkeletalControlBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_SpringBone.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_Trail.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_TwistCorrectiveNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_TwoBoneIK.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/AnimGraphRuntime/Private/BoneControllers/AnimNode_WheelHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/AppFrameworkModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Framework/Testing/SLayoutExample.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Framework/Testing/STableViewTesting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Framework/Testing/SUserWidgetTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Framework/Testing/SWidgetGallery.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Framework/Testing/TestStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors/SColorGradingPicker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors/SColorPicker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors/SColorThemes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Colors/SComplexGradient.cpp" \
@@ -2515,20 +2886,80 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Testing/SPerfSuite.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Testing/STestSuite.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AppFramework/Private/Widgets/Workflow/SWizard.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalBlitCommandEncoder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalBufferPools.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalCommandBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalCommandEncoder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalCommandList.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalCommandQueue.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalComputeCommandEncoder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalContext.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalIndexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalParallelRenderCommandEncoder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalProfiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalQuery.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalRHI.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalRHIContext.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalRenderCommandEncoder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalRenderPass.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalRenderPipelineDesc.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalRenderTarget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalShaders.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalStateCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalStructuredBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalTexture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalUAV.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalUniformBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalVertexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalVertexDeclaration.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Apple/MetalRHI/Private/MetalViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/AssetData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/AssetDataGatherer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/AssetRegistry.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/AssetRegistryModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/BackgroundAssetData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/DependsNode.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/NameTableArchive.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/PackageDependencyData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/PackageReader.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/PathTreeNode.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AssetRegistry/Private/PathTree.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerChannelMaps.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerDevice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerEffectsManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerSourceManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerSourceVoice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/AudioMixerSubmix.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/AllPassFilter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/Chorus.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/Delay.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/EQ.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/Filter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/Flanger.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/Noise.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/ParamInterpolator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/Reverb.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/SinOsc.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/DSP/WaveTableOsc.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/Effects/AudioMixerSubmixEffectEQ.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/Effects/AudioMixerSubmixEffectReverb.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AudioMixer/Private/Effects/AudioMixerSubmixEffectTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AutomationMessages/Private/AutomationMessagesModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/AutomationWorker/Private/AutomationAnalytics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/AutomationWorker/Private/AutomationWorkerModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/BlueprintRuntime/Private/BlueprintRuntime.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/BlueprintRuntime/Private/BlueprintRuntimeSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CEF3Utils/Private/CEF3Utils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CEF3Utils/Private/Mac/MacCefApplicationCategory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CinematicCamera/Private/CameraRig_Crane.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CinematicCamera/Private/CameraRig_Rail.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CinematicCamera/Private/CineCameraActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CinematicCamera/Private/CineCameraComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CinematicCamera/Private/CinematicCameraModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidApplication.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidFile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidInputInterface.cpp" \
@@ -2538,6 +2969,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidMemory.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidMisc.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidOutputDevices.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidPlatformBacktrace.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidPlatformStackWalk.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidProcess.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Android/AndroidString.cpp" \
@@ -2549,22 +2981,23 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Apple/ApplePlatformString.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Apple/ApplePlatformSymbolication.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Apple/ApplePlatformTime.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Async/Async.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Async/TaskGraph.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/ContainerAllocationPolicies.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/ContainersTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/LockFreeList.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/StackTracker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/String.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/Ticker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/Union.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/Algo/AlgosTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Containers/Algo/FindSortedStringCaseInsensitive.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Delegates/DelegateHandle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Features/ModularFeatures.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericApplication.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformAtomics.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformContext.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformChunkInstall.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformCrashContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformFile.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformMallocCrash.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformMath.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformMemory.cpp" \
@@ -2573,8 +3006,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformOutputDevices.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformProcess.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformProperties.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformSplash.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformStackWalk.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformString.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformSurvey.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformSymbolication.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericPlatformTime.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/GenericPlatform/GenericWindow.cpp" \
@@ -2584,16 +3019,21 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/FileManagerGeneric.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/IPlatformFileLogWrapper.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/IPlatformFileProfilerWrapper.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/Keys.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocAnsi.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocBinned.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocBinned2.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocJemalloc.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocLeakDetection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocStomp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocTBB.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MallocVerify.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/MemoryBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/OutputDevices.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/PThreadRunnableThread.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/PlatformFileManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/ThreadHeartBeat.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/ThreadingBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/UnrealMemory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HAL/Allocators/CachedOSPageAllocator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HTML5/HTML5Application.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HTML5/HTML5Cursor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/HTML5/HTML5InputInterface.cpp" \
@@ -2609,6 +3049,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSAppDelegate.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSApplication.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSAsyncTask.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSChunkInstaller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSInputInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSPlatformFile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSPlatformFramePacer.cpp" \
@@ -2622,6 +3063,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/IOS/IOSWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/CamelCaseBreakIterator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/Culture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/FastDecimalFormat.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/GatherableTextData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/ICUBreakIterator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/ICUCamelCaseBreakIterator.cpp" \
@@ -2647,10 +3089,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/LegacyText.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/LegacyWordBreakIterator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/Text.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextFormatArgumentModifier.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextFormatter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextHistory.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextLocalizationManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextLocalizationResourceGenerator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Internationalization/TextNamespaceUtil.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxApplication.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxCriticalSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxCursor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxPlatformCrashContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxPlatformFile.cpp" \
@@ -2664,6 +3110,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxPlatformSurvey.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxPlatformTime.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Linux/LinuxWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/LogCategory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/LogMacros.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/LogScopedCategoryAndVerbosityOverride.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/LogScopedVerbosityOverride.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/LogSuppressionInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/MessageLog.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Logging/TokenizedMessage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/CocoaMenu.cpp" \
@@ -2672,6 +3123,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/CocoaWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/HIDInputInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/MacApplication.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/MacCriticalSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/MacCursor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/MacMallocZone.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Mac/MacPlatformFile.cpp" \
@@ -2690,6 +3142,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/Color.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/ColorList.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/FloatPacker.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/Matrix.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/SHMath.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/Sphere.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/Transform.cpp" \
@@ -2698,14 +3151,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Math/UnrealMath.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/AES.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/App.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/AssertionMacros.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/AutomationTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Base64.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/BufferedOutputDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/CString.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/CallbackDevice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/CommandLine.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Compression.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/ConfigCacheIni.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/ConfigManifest.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Core.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/CoreDelegates.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/CoreGlobals.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/CoreMisc.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Crc.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/DataCodec.cpp" \
@@ -2713,34 +3169,53 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/DefaultValueHelper.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/EngineBuildSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/EngineVersion.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/EventPool.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Exec.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/ExpressionParser.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/ExpressionParserExamples.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/FbxErrors.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/FeedbackContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/FeedbackContextMarkup.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/FileHelper.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Guid.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/GuidGenerator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/InteractiveProcess.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/LocalTimestampDirectoryVisitor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/MapErrors.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/MemStack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/MessageDialog.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/MonitoredProcess.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/NetworkVersion.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/ObjectThumbnail.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDevice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceAnsiError.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceArchiveWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceDebug.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceFile.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceHelper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceMemory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceNull.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/OutputDeviceRedirector.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Parse.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Paths.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/RemoteConfigIni.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/RocketSupport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/SecureHash.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/SlowTask.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/SlowTaskStack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/StringFormatter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/StringUtility.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/TextFilterExpressionEvaluator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/TextFilterTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/TextFilterUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/TimeGuard.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/Timespan.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/UProjectInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Misc/WildcardString.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Modules/ModuleManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/ABTesting.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/CookStats.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/ExternalProfiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/Histogram.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/LoadTimeTracker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/MallocProfiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/ProfilingHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/ScopedDebugInfo.cpp" \
@@ -2748,9 +3223,16 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/Windows/VSPerfExternalProfiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/ProfilingDebugging/Windows/VTuneExternalProfiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/Archive.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/ArchiveLoadCompressedProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/ArchiveProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/ArchiveSaveCompressedProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/AsyncIOSystemBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/Bitstreams.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/BitReader.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/BitWriter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/CompressedChunkInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/CustomVersion.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/LargeMemoryReader.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/LargeMemoryWriter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/Csv/CsvParser.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Serialization/Csv/CsvParserTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Stats/Stats2.cpp" \
@@ -2760,6 +3242,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Stats/StatsMallocProfilerProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Stats/StatsMisc.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Async/AsyncTest.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Async/TaskGraphTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/HAL/PlatformTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Internationalization/ArchiveTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Internationalization/DateTimeFormattingRulesTest.cpp" \
@@ -2780,29 +3263,19 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Misc/PathsTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Misc/QueueTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Misc/TimespanTest.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Misc/TripleBufferTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Tests/Misc/TypeContainerTest.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/UObject/DevObjectVersion.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/UObject/ObjectVersion.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/UObject/UnrealNames.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/ThreadEmulation.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTApplication.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTAtomics.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTFile.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTInputInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTMemory.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTMisc.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTOutputDevices.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTProcess.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTSplash.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTStackWalk.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTString.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/WinRT/WinRTTime.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/MinimalWindowsApi.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/TextStoreACP.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsApplication.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsCriticalSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsCursor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformAtomics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformCrashContext.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformFile.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformMallocBinned.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformMemory.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformMisc.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsPlatformNamedPipe.cpp" \
@@ -2816,9 +3289,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsTextInputMethodSystem.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/WindowsWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Core/Private/Windows/XInputInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Core/Public/GenericPlatform/GenericPlatformChunkInstall.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Interface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Blueprint/BlueprintSupport.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Internationalization/PackageLocalizationCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Internationalization/PackageLocalizationManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Internationalization/PackageLocalizationUtil.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Internationalization/TextPackageNamespaceUtil.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Misc/ExclusiveLoadPackageTimeTracker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Misc/GCObjectReferencer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Misc/NotifyHook.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Misc/PackageName.cpp" \
@@ -2847,6 +3323,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Serialization/ObjectWriter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Serialization/PropertyLocalizationDataGathering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Serialization/ReloadObjectArc.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Serialization/TextReferenceCollector.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Serialization/TraceReferences.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/Templates/Casts.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/Class.cpp" \
@@ -2854,8 +3331,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/CoreNet.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/EditPropertyChain.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/Enum.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/EnumProperty.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/ErrorException.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/FindStronglyConnected.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/Interface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/LazyObjectPtr.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/Linker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/LinkerLoad.cpp" \
@@ -2873,6 +3353,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/ObjectResource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/Package.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PackageFileSummary.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PackageReload.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/Property.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyArray.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyAssetClass.cpp" \
@@ -2893,9 +3374,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyMap.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyMulticastDelegate.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyName.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyNumeric.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyObject.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertySet.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyStr.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyStruct.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyTag.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyUInt16.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyUInt32.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/PropertyUInt64.cpp" \
@@ -2906,22 +3390,56 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/ScriptCore.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/ScriptStackTracker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/StructScriptLoader.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/TextureAllocations.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/TlsObjectInitializers.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/TextProperty.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectAllocator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectArchetype.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectArray.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectBaseUtility.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectClusters.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectHash.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectLinker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectMarks.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectNetIndex.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectThreadContext.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UTextProperty.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/UnrealType.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/CoreUObject/Private/UObject/WeakObjectPtr.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Adapter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Allocation.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Buffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12CommandContext.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12CommandList.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Commands.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12ConstantBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12DescriptorCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Device.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12DirectCommandListManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12IndexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Pipelinestate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Query.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12RHI.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12RenderTarget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Resources.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12RootSignature.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Shaders.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12State.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12StateCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Stats.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12StructuredBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Texture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12UAV.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12UniformBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Util.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12VertexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12VertexDeclaration.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12View.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/D3D12Viewport.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/Windows/WindowsD3D12Device.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/Windows/WindowsD3D12DiskCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/Windows/WindowsD3D12Fence.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/Windows/WindowsD3D12PipelineState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/D3D12RHI/Private/Windows/WindowsD3D12Viewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/DatabaseSupport/Private/Database.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/DatabaseSupport/Private/DatabaseSupport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/EmptyRHI/Private/EmptyCommands.cpp" \
@@ -2938,8 +3456,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/EmptyRHI/Private/EmptyVertexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/EmptyRHI/Private/EmptyVertexDeclaration.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/EmptyRHI/Private/EmptyViewport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Classes/Animation/AnimLinkableElement.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Classes/Animation/AnimNode_AssetPlayerBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ADPCMAudioInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AVIWriter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ActiveSound.cpp" \
@@ -2948,11 +3464,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ActorEditor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ActorEditorUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ActorReplication.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AdvancedPreviewScene.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AlphaBlend.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AmbientSound.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AnimBlueprint.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AnimationAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AssetUserData.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Attenuation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Audio.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioDecompress.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioDerivedData.cpp" \
@@ -2961,12 +3479,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioEffect.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioStreaming.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioThread.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioVolume.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AudioWaveFormatParser.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BasedPosition.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BatchedElements.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BlockingVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Blueprint.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BlueprintGeneratedClass.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BlueprintMapLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BlueprintSetLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BoneContainer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/BookMark.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Breakpoint.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Brush.cpp" \
@@ -2981,7 +3504,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Character.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ChartCreation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CheatManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ColorVertexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ComponentDelegateBinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ComponentInstanceDataCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ComponentUtils.cpp" \
@@ -2989,13 +3511,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Controller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ConvexVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CoreSettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CubemapUnwrapUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CullDistanceVolume.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CurveBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CurveEdPresetCurve.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CurveFloat.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CurveLinearColor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CurveTable.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/CurveVector.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DDSLoader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DPICustomScalingRule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DamageType.cpp" \
@@ -3011,6 +3529,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DebugCameraController.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DebugCameraHUD.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DebugRenderSceneProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DebugViewModeHelpers.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DebugViewModeMaterialProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DecalActor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DefaultPawn.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DefaultPhysicsVolume.cpp" \
@@ -3028,15 +3548,18 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DrawDebugHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DynamicBlueprintBinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DynamicMeshBuilder.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Engine.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EndUserSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineAnalytics.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineGlobals.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineMessage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineService.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineSessionManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EngineUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ErrorChecking.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/FloatingPawnMovement.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Font.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/FontFace.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GPUSkinCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GPUSkinVertexFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GPUSort.cpp" \
@@ -3044,13 +3567,16 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameEngine.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameMode.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameModeBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameNetworkManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameSession.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameStateBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameUserSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameViewportClient.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GenericOctree.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GeomTools.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GestureRecognizer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GlobalShader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/HModel.cpp" \
@@ -3061,7 +3587,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/HighResScreenshot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/HitProxies.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ImageUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ImportantToggleSettingInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/InGameAdvertising.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/InGamePerformanceTracker.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Info.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/InheritableComponentHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/InputActionDelegateBinding.cpp" \
@@ -3086,6 +3614,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetMaterialLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetMathLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetNodeHelperLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetRenderingLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetStringLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/KismetTextLibrary.cpp" \
@@ -3110,12 +3639,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/LocalPlayer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/LocalVertexFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MallocProfilerEx.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MapBuildData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MatineeAnimInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MatineeDelegates.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MatineeInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MatineeUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MemberReference.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MeshMergeCullingVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MeshParticleVertexFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MeshSimplificationSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Model.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ModelCollision.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ModelLight.cpp" \
@@ -3126,14 +3658,16 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NavigationObjectBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NetConnection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NetworkDriver.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NetworkObjectList.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NetworkPrediction.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NetworkProfiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NetworkSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/NiagaraEffectRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Note.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ObjectEditorUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ObjectLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ObjectReferencer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/OnlineBlueprintCallProxyBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/OnlineEngineInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/OnlineReplStructs.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/OnlineSession.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/OpusAudioInfo.cpp" \
@@ -3141,7 +3675,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PainCausingVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Pawn.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PendingNetGame.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PerfCountersHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsVolume.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PlanarReflectionSceneProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PlatformFeatures.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Player.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PlayerCameraManager.cpp" \
@@ -3153,6 +3689,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Polygon.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PositionVertexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PostProcessVolume.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PreCullTrianglesSetup.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PrecomputedLightVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PrecomputedVisibilityVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PrecomputedVisiblityOverrideVolume.cpp" \
@@ -3161,8 +3698,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PrimitiveDrawingUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PrimitiveSceneProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/RawIndexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/RendererSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/RendererSupport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/RenderingSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/RepLayout.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Replication.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ReverbEffect.cpp" \
@@ -3170,6 +3707,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SCS_Node.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Scalability.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Scene.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SceneInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SceneManagement.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SceneUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SceneView.cpp" \
@@ -3181,9 +3719,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ShowFlags.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SimpleConstructionScript.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SimpleElementShaders.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SingleAnimationPlayData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalMesh.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalMeshComponentPhysics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalMeshMerge.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalMeshReductionSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalMeshSorting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalRender.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SkeletalRenderCPUSkin.cpp" \
@@ -3191,7 +3731,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundAttenuation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundClass.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundConcurrency.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundCue.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundEffectBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundEffectPreset.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundEffectSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundEffectSubmix.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundGroups.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundMix.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundNode.cpp" \
@@ -3218,6 +3763,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundNodeSwitch.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundNodeWaveParam.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundNodeWavePlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundSubmix.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundWave.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SoundWaveProcedural.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SpectatorPawn.cpp" \
@@ -3233,7 +3779,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/StaticMeshLight.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/StaticMeshRender.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/StatsRender2.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/StereoLayerFunctionLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/StereoLayerRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/StreamableManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SubDSurfaceComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SubtitleManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/SystemSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/TargetPoint.cpp" \
@@ -3264,6 +3813,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UnrealExporter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UnrealNetwork.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UpdateTextureShaders.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserActivityTracking.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserDefinedEnum.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserDefinedStruct.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterfaceSettings.cpp" \
@@ -3272,8 +3822,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VectorFieldVolume.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VoiceChannel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Volume.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VolumeRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VorbisAudioInfo.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/WheeledVehicle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/WindDirectionalSource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/World.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/WorldComposition.cpp" \
@@ -3283,6 +3833,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/AvoidanceManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/NavCollision.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/NavGraphGenerator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/NavLinkComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/NavLinkCustomComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/NavLinkProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/AI/Navigation/NavLinkRenderingComponent.cpp" \
@@ -3328,6 +3879,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimCompress_RemoveEverySecondKey.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimCompress_RemoveLinearKeys.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimCompress_RemoveTrivialKeys.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimCompressionDerivedData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimCurveTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimEncoding.cpp" \
@@ -3335,56 +3887,60 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimEncoding_PerTrackCompression.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimEncoding_VariableKeyLerp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimInstanceProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimInterpFilter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimLinkableElement.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimMetaData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimMontage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNodeBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNodeSpaceConversions.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_ApplyAdditive.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_BlendListBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_BlendListByBool.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_BlendListByEnum.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_BlendListByInt.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_BlendSpaceEvaluator.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_BlendSpacePlayer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_LayeredBoneBlend.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_RefPose.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_Root.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_RotateRootBone.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_RotationOffsetBlendSpace.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_ApplyMeshSpaceAdditive.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_AssetPlayerBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_SaveCachedPose.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_SequenceEvaluator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_SequencePlayer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_Slot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_StateMachine.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_SubInput.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_SubInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_TransitionPoseEvaluator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_TransitionResult.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_TwoWayBlend.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNode_UseCachedPose.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotify.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotifyQueue.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotifyState.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotifyState_TimedParticleEffect.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotifyState_Trail.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotify_PlayParticleEffect.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotify_PlaySound.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimNotify_ResetClothingSimulation.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimPhysicsSolver.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimSequence.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimSequenceBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimSet.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimSingleNodeInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimSingleNodeInstanceProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimStateMachineTypes.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimTypes.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimationRecordingSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimationRuntime.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimationSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AnimationUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/AssetMappingTable.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/BlendProfile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/BlendSpace.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/BlendSpace1D.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/BlendSpaceBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/BlendSpaceUtilities.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/BonePose.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/CurveSourceInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/InputScaleBias.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/PoseAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/PreviewAssetAttachComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/ReferenceSkeleton.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/Rig.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/SkeletalControl.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/SkeletalMeshActor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/Skeleton.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/SmartName.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Animation/VertexAnimation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Atmosphere/Atmosphere.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraActor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraAnim.cpp" \
@@ -3392,6 +3948,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraModifier.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraModifier_CameraShake.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraPhotography.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraShake.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Camera/CameraStackTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Collision/Collision.cpp" \
@@ -3421,6 +3978,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/DirectionalLightComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/DrawFrustumComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/DrawSphereComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/ForceFeedbackComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/HeightFogComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/InputComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/InterpToMovementComponent.cpp" \
@@ -3436,6 +3994,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PawnNoiseEmitterComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PlatformEventsComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PointLightComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PortalComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PoseableMeshComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PostProcessComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/PrimitiveComponent.cpp" \
@@ -3453,10 +4012,21 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/SplineMeshComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/SpotLightComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/StaticMeshComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/StereoLayerComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Components/TextRenderComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/CurveBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/CurveEdPresetCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/CurveFloat.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/CurveLinearColor.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/CurveOwnerInterface.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/CurveVector.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/IndexedCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/IntegralCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/KeyHandle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/NameCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/RichCurve.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Curves/StringCurve.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Debug/DebugDrawService.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Debug/LogVisualizerCameraController.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Debug/LogVisualizerHUD.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Debug/ReporterBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Debug/ReporterGraph.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/DeviceProfiles/DeviceProfile.cpp" \
@@ -3468,12 +4038,19 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EdGraph/EdGraphSchema.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EditorFramework/AssetImportData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/EditorFramework/ThumbnailInfo.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Engine/PoseWatch.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/ForceFeedbackEffect.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/HUDHitBox.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/HapticFeedbackEffect.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/RootMotionSource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/SaveGame.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/SimpleReticle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/SpawnActorTimer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/SpringArmComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/GameFramework/TouchInterface.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Internationalization/EnginePackageLocalizationCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Kismet/BlueprintAsyncActionBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Kismet/BlueprintPlatformLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Layers/Layer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Materials/Material.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Materials/MaterialExpressions.cpp" \
@@ -3486,6 +4063,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Materials/MaterialUniformExpressions.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Materials/MeshMaterialShader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Materials/ParameterCollection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MeshVertexPainter/MeshVertexPainter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/MeshVertexPainter/MeshVertexPainterKismetLibrary.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PacketHandlers/EngineHandlerComponentFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PacketHandlers/StatelessConnectHandlerComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/Emitter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/FXSystem.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/ParticleBeam2EmitterInstance.cpp" \
@@ -3516,9 +4097,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/ParticleTrail2EmitterInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/ParticleTrailModules.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/ParticleVertexFactory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Particles/SubUVAnimation.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Performance/EnginePerformanceTargets.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/BodyInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/BodySetup.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/ConstraintDrives.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/ConstraintInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/ConstraintTypes.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/ConstraintUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysAnim.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysCommandHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysDerivedData.cpp" \
@@ -3529,6 +4115,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysXLibs.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysXSupport.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysicalAnimationComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysicalMaterial.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysicsAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine/PhysicsCollisionHandler.cpp" \
@@ -3544,9 +4131,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine2D/AggregateGeometry2D.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine2D/BodySetup2D.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/PhysicsEngine2D/Box2DIntegration.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Rendering/ColorVertexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Rendering/SeparableSSS.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Rendering/SkinWeightVertexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Rendering/SubDSurface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Rendering/SubsurfaceProfile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ShaderCompiler/ShaderCompiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/ShaderCompiler/ShaderPipelineCompiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/ButtonStyleAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/CheckboxStyleAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/DebugCanvas.cpp" \
@@ -3555,10 +4146,16 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/SlateBrushAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/SlateGameResources.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/SlateSoundDevice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/SlateTextureAtlasInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Slate/SlateTextures.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Streaming/AsyncTextureStreaming.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Streaming/StreamingManagerTexture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Streaming/StreamingTexture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Streaming/TextureInstanceManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Streaming/TextureStreamingBuild.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Streaming/TextureStreamingHelpers.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Tests/AnalyticsTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Tests/AutomationCommon.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Tests/AutomationTestCommon.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Tests/EngineAutomationTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Tests/ExternalToolTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Tests/IntSerializationTest.cpp" \
@@ -3569,16 +4166,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/CanvasItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/Console.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/EngineFontServices.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/ForceFeedbackEffect.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/InputSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/PlayerInput.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/UserInterface/VisualizeRT.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Vehicles/PhysXVehicleManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Vehicles/TireType.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Vehicles/VehicleAnimInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Vehicles/VehicleWheel.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Vehicles/WheeledVehicleMovementComponent.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/Vehicles/WheeledVehicleMovementComponent4W.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VisualLogger/VisualLogger.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VisualLogger/VisualLoggerAutomationTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Engine/Private/VisualLogger/VisualLoggerBinaryFileDevice.cpp" \
@@ -3600,94 +4191,24 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Foliage/Private/ProceduralFoliageSpawner.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Foliage/Private/ProceduralFoliageTile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Foliage/Private/ProceduralFoliageVolume.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsAndChatModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsAndChatStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsChatChromeStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsChatStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsComboStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsFontStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsListStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/FriendsAndChat/Private/FriendsMarkupStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameLiveStreaming/GameLiveStreaming.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameLiveStreaming/GameLiveStreamingFunctionLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameLiveStreaming/QueryLiveStreamsCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/GameMenuBuilder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/GameMenuBuilderModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/GameMenuBuilderStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/GameMenuItem.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/GameMenuPage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/GameMenuWidgetStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/SGameMenuItemWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameMenuBuilder/Private/SGameMenuPageWidget.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemBlueprintLibrary.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemComponent.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemComponent_Abilities.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemDebugHUD.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemGlobals.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemLog.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemStats.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemTestAttributeSet.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AbilitySystemTestPawn.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/AttributeSet.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayAbilitiesExec.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayAbilitiesModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayAbilityBlueprint.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayAbilityBlueprintGeneratedClass.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayAbilityTargetTypes.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayAbilityTypes.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayCueInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayCueManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayCueNotify_Actor.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayCueNotify_HitImpact.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayCueNotify_Static.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayCueSet.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffect.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectAggregator.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectCalculation.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectExecutionCalculation.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectExtension.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectExtension_LifestealTest.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectExtension_ShieldTest.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectTemplate.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectTests.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectTypes.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayEffectUIData.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayModMagnitudeCalculation.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayPrediction.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/GameplayTagResponseTable.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/TickableAttributeSetInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbility.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilitySet.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_ActorPlacement.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_GroundTrace.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_Radius.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_SingleLineTrace.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_Trace.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityTargetDataFilter.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityWorldReticle.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbilityWorldReticle_ActorVisualization.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbility_CharacterJump.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/GameplayAbility_Montage.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_MoveToLocation.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_NetworkSyncPoint.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_PlayMontageAndWait.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_Repeat.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_SpawnActor.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_StartAbilityState.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_VisualizeTargeting.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAbilityActivate.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAbilityCommit.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAttributeChange.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitCancel.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitConfirm.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitConfirmCancel.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitDelay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied_Self.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied_Target.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectRemoved.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayTag.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayTagBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitInputPress.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitInputRelease.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitMovementModeChange.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitOverlap.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitTargetData.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitVelocityChange.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTags/Private/BlueprintGameplayTagLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTags/Private/GameplayTagAssetInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTags/Private/GameplayTagContainer.cpp" \
@@ -3700,10 +4221,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTasks/Private/GameplayTaskResource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTasks/Private/GameplayTasksComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTasks/Private/GameplayTasksModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/GameplayTasks/Private/Tasks/GameplayTask_ClaimResource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTasks/Private/Tasks/GameplayTask_SpawnActor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GameplayTasks/Private/Tasks/GameplayTask_WaitDelay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/ActorFactoryGeometryCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/AssetTypeActions_GeometryCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCacheActor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCacheComponent.cpp" \
@@ -3712,6 +4232,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCacheTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCacheTrackFlipbookAnimation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCacheTrackTransformAnimation.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/GeometryCache/Private/GeometryCacheTrackTransformGroupAnimation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HTML5/HTML5JS/Private/HTML5JavaScriptFx.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HTML5/MapPakDownloader/Private/MapPakDownloader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HTML5/MapPakDownloader/Private/MapPakDownloaderModule.cpp" \
@@ -3721,44 +4242,47 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/HTML5/Simulator/HTML5Win32/Private/WinHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HTTPChunkInstaller/Private/HTTPChunkInstaller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HTTPChunkInstaller/Private/LocalTitleFile.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/HardwareSurvey/Private/HardwareSurveyModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HeadMountedDisplay/Private/HeadMountedDisplayModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/HeadMountedDisplay/Private/HeadMountedDisplayTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/HeadMountedDisplay/Private/MotionControllerComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/HeadMountedDisplay/Private/VRNotificationsComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSAudio/Private/IOSAudioBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSAudio/Private/IOSAudioDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSAudio/Private/IOSAudioSession.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSAudio/Private/IOSAudioSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSLocalNotification/Private/IOSLocalNotification.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSRuntimeSettings/Private/IOSRuntimeSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/IOSRuntimeSettings/Private/IOSRuntimeSettingsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IOS/LaunchDaemonMessages/Private/LaunchDaemonMessagesModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalCommands.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalIndexBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalQuery.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalRHI.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalRenderTarget.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalShaders.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalState.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalStructuredBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalTexture.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalUAV.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalUniformBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalVertexBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalVertexDeclaration.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/IOS/MetalRHI/Private/MetalViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/IPC/Private/IPCModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageCore/Private/ImageCore.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/BmpImageWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/ExrImageWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/IcnsImageWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/IcoImageWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/ImageWrapperBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/ImageWrapperModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/JpegImageWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/ImageWrapper/Private/PngImageWrapper.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/InputCore/Private/InputCore.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/InputCore/Private/InputCoreModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/InputCore/Private/InputCoreTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/InputDevice/Private/InputDeviceModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/InternationalizationModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/LocTextHelper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/LocTextHelperTests.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/TextLocalizationResourceGenerator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/Serialization/JsonInternationalizationArchiveSerializer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/Serialization/JsonInternationalizationManifestSerializer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Internationalization/Private/Serialization/JsonInternationalizationMetadataSerializer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Json/Private/JsonModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Json/Private/Dom/JsonObject.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Json/Private/Dom/JsonValue.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Json/Private/Tests/JsonTests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/JsonUtilities/Private/JsonObjectConverter.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/JsonUtilities/Private/JsonUtilities.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/JsonUtilities/Private/JsonObjectWrapper.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/JsonUtilities/Private/JsonUtilitiesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Landscape/Private/Landscape.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Landscape/Private/LandscapeBlueprintSupport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Landscape/Private/LandscapeCollision.cpp" \
@@ -3795,23 +4319,45 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Launch/Private/IOS/LaunchIOS.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Launch/Private/Linux/LaunchLinux.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Launch/Private/Mac/LaunchMac.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Launch/Private/WinRT/WinRTLaunch.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Launch/Private/Windows/LaunchWindows.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequence.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequenceActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequenceBurnIn.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequenceModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequenceObject.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequenceObjectReference.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequencePlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/LevelSequence/Private/LevelSequenceSpawnRegister.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Linux/LinuxCommonStartup/Private/LinuxCommonStartup.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Mac/CoreAudio/Private/CoreAudioBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Mac/CoreAudio/Private/CoreAudioDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Mac/CoreAudio/Private/CoreAudioEffects.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Mac/CoreAudio/Private/CoreAudioSource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Mac/UnrealAudioCoreAudio/Private/UnrealAudioCoreAudio.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MaterialShaderQualitySettings/Private/MaterialShaderQualitySettings.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MaterialShaderQualitySettings/Private/MaterialShaderQualitySettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MaterialShaderQualitySettings/Private/MaterialShaderQualitySettingsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Media/Private/MediaModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/MediaAssetsModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/BaseMediaSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/FileMediaSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaOverlays.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaPlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaPlaylist.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaSoundWave.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaSubtitles.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaTexture.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/MediaTextureResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/PlatformMediaSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Assets/StreamMediaSource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaAssets/Private/Misc/MediaTextureResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaUtils/Private/MediaPlayerBase.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MediaUtils/Private/MediaUtilsModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/MessagingModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/Bridge/MessageBridge.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/Bus/MessageBus.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/Bus/MessageContext.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/Bus/MessageDispatchTask.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/Bus/MessageRouter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Messaging/Private/Bus/MessageTracer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MessagingRpc/Private/MessageRpcClient.cpp" \
@@ -3824,55 +4370,131 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/MoviePlayer/Private/NullMoviePlayer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieScene.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneBinding.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneBindings.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneBindingOverrides.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneClipboard.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneCommonHelpers.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneFolder.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneObjectManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneNameableTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieScenePlayer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSequence.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSequenceInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSequencePlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSignedObject.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSpawnRegister.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneSpawnable.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/MovieSceneTrack.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/RuntimeMovieScenePlayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Compilation/MovieSceneEvaluationTemplateGenerator.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Compilation/MovieSceneSegmentCompiler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneAnimTypeID.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvalTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvaluationCustomVersion.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvaluationField.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvaluationState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvaluationTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvaluationTemplateInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneEvaluationTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneExecutionTokens.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneLegacyTrackInstanceTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieScenePlayback.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieScenePreAnimatedState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieScenePropertyTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneSequenceTemplateStore.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Evaluation/MovieSceneTrackImplementation.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieScene/Private/Tests/MovieSceneTransformTests.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/ActiveMovieSceneCaptures.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/AutomatedLevelSequenceCapture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/CompositionGraphCaptureProtocol.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/FrameGrabber.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/FrameGrabberProtocol.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/ImageSequenceProtocol.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/LevelCapture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/MovieSceneCapture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/MovieSceneCaptureEnvironment.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/MovieSceneCaptureHelpers.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/MovieSceneCaptureModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/MovieSceneCaptureProtocol.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneCapture/Private/VideoCaptureProtocol.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/MovieSceneHitProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/MovieSceneTracksModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieScene3DAttachTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieScene3DPathTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieScene3DTransformTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneActorReferenceTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneAudioTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneCameraAnimTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneCameraCutTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneColorTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneEventTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneFadeTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneLevelVisibilityTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneParameterTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneParticleParameterTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneParticleTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieScenePropertyTemplates.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneSkeletalAnimationTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneSlomoTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneSpawnTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneTemplateCommon.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Evaluation/MovieSceneVisibilityTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieScene3DAttachSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieScene3DConstraintSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieScene3DPathSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieScene3DTransformSection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneAnimationSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneActorReferenceSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneAudioSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneBoolSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneByteSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneCameraAnimSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneCameraCutSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneCameraShakeSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneCinematicShotSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneColorSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneEnumSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneEventSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneFadeSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneFloatSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneIntegerSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneLevelVisibilitySection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneParameterSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneParticleSection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneShotSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneSkeletalAnimationSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneSlomoSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneSpawnSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneStringSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneSubSection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneVectorSection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/MovieSceneVisibilitySection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Sections/SubMovieSceneSection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieScene3DPathTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieScene3DTransformTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneAnimationTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneAudioTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneBoolTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneByteTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneColorTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneFloatTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneParticleTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneShotTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneVectorTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/MovieSceneVisibilityTrackInstance.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/TrackInstances/SubMovieSceneTrackInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieScene3DAttachTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieScene3DConstraintTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieScene3DPathTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieScene3DTransformTrack.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneAnimationTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneActorReferenceTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneAudioTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneBoolTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneByteTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneCameraAnimTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneCameraCutTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneCameraShakeTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneCinematicShotTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneColorTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneEnumTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneEventTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneFadeTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneFloatTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneIntegerTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneLevelVisibilityTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneMaterialTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneParticleParameterTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneParticleTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieScenePropertyTrack.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneShotTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneSkeletalAnimationTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneSlomoTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneSpawnTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneStringTrack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneSubTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneVectorTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/MovieSceneVisibilityTrack.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/MovieSceneTracks/Private/Tracks/SubMovieSceneTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Navmesh/Private/NavmeshModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Navmesh/Private/DebugUtils/DebugDraw.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Navmesh/Private/DebugUtils/DetourDebugDraw.cpp" \
@@ -3913,6 +4535,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/NetworkFileSystem/Private/NetworkFileServerHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/NetworkFileSystem/Private/NetworkFileSystemModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/NetworkReplayStreaming/HttpNetworkReplayStreaming/Private/HttpNetworkReplayStreaming.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/NetworkReplayStreaming/InMemoryNetworkReplayStreaming/Private/InMemoryNetworkReplayStreaming.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/NetworkReplayStreaming/NetworkReplayStreaming/Private/NetworkReplayStreaming.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Private/NullNetworkReplayStreaming.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Networking/Private/NetworkingModule.cpp" \
@@ -3923,35 +4546,26 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Networking/Private/Steam/SteamEndpoint.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Networking/Private/Tests/IPv4AddressTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraActor.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraCommon.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraConstantSet.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraEffect.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraEffectRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraEmitterProperties.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraEvents.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraFunctionLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraScript.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraSequence.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Niagara/Private/NiagaraSimulation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/NullDrv/Private/NullDrv.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/NullDrv/Private/NullRHI.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAchievementsInterfaceGooglePlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayAuthAction.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayLogin.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayLogout.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayQueryAchievements.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayQueryInAppPurchases.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayReadLeaderboard.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineAsyncTaskGooglePlayShowLoginUI.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineExternalUIInterfaceGooglePlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineIdentityInterfaceGooglePlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineLeaderboardInterfaceGooglePlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineStoreInterfaceGooglePlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineSubsystemGooglePlay.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/Android/OnlineSubsystemGooglePlay/Private/OnlineSubsystemGooglePlayModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchAnalytics.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchChunk.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchChunkCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchChunkStore.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchCompactifier.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchDataEnumeration.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchDiffManifests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchDownloader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchError.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchFileAttributes.cpp" \
@@ -3961,165 +4575,63 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchHash.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchInstaller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchManifest.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchMergeManifests.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchProgress.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchServicesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchServicesSingleton.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchState.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchUtil.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/BuildPatchVerification.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Core/BlockStructure.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/BuildStreamer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/CloudEnumeration.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/DataMatcher.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/DataScanner.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/FileAttributesParser.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/ManifestBuilder.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Generation/StatsCollector.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/BuildPatchServices/Private/Tests/BlockStructureTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HttpManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HttpModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HttpRetrySystem.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HttpTests.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HttpThread.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/NullHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Android/AndroidHttp.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Apple/AppleHTTP.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Apple/ApplePlatformHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Curl/CurlHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Curl/CurlHttpManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Curl/CurlHttpThread.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/GenericPlatform/GenericPlatformHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HTML5/HTML5HTTP.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/HTML5/HTML5PlatformHttp.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/IOS/IOSHTTP.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/IOS/IOSPlatformHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Linux/LinuxPlatformHttp.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Mac/MacHTTP.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Mac/MacPlatformHttp.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/WinRT/WinRTHttp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Windows/HttpWinInet.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/HTTP/Private/Windows/WindowsPlatformHttp.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineAchievementsInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineExternalUIInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineFriendsInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineIdentityInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineLeaderboardsInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineSessionInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineSharedCloudInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineStoreInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineSubsystemIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineSubsystemIOSModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineTurnBasedInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/OnlineUserCloudInterfaceIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/TurnBasedEventListener.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/TurnBasedMatchmakerDelegateIOS.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/IOS/OnlineSubsystemIOS/Private/TurnBasedMatchmakerIOS.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/ICMP/Private/Icmp.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/ICMP/Private/IcmpModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/ICMP/Private/IcmpPosix.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/ICMP/Private/UDPPing.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/ICMP/Private/Windows/IcmpWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/ImageDownload/Private/ImageDownloadModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/ImageDownload/Private/WebImage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/ImageDownload/Private/WebImageCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/LANBeacon.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/NamedInterfaces.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineAsyncTaskManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineKeyValuePair.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineNotification.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineNotificationHandler.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineNotificationTransportManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineSessionSettings.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineStats.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineSubsystem.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineSubsystemImpl.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/OnlineSubsystemModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystem/Private/TurnBasedMatchInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemAmazon/Private/OnlineIdentityAmazon.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemAmazon/Private/OnlineSubsystemAmazon.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/OnlineSubsystemFacebookModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/IOS/OnlineFriendsFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/IOS/OnlineIdentityFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/IOS/OnlineSharingFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/IOS/OnlineSubsystemFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/IOS/OnlineUserFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/Windows/OnlineFriendsFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/Windows/OnlineIdentityFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemFacebook/Private/Windows/OnlineSubsystemFacebook.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineAchievementsInterfaceNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineAsyncTaskManagerNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineIdentityNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineLeaderboardInterfaceNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineSessionInterfaceNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineSubsystemModuleNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemNull/Private/OnlineSubsystemNull.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/IPAddressSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineAchievementsInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineAsyncTaskManagerSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineExternalUIInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineFriendsInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineIdentityInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineLeaderboardInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineSessionAsyncLobbySteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineSessionAsyncServerSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineSessionInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineSharedCloudInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineSubsystemModuleSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineSubsystemSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/OnlineUserCloudInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/SocketSubsystemSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/SocketsSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/SteamNetConnection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/SteamNetDriver.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/SteamUtilities.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/VoiceEngineSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/VoiceInterfaceSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemSteam/Private/VoicePacketSteam.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Classes/LeaderboardFlushCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Classes/LeaderboardQueryCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/AchievementBlueprintLibrary.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/AchievementQueryCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/AchievementWriteCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/ConnectionCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/CreateSessionCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/DestroySessionCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/EndMatchCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/EndTurnCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/FindSessionsCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/FindTurnBasedMatchCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/InAppPurchaseCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/InAppPurchaseQueryCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/InAppPurchaseRestoreCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/IpConnection.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/IpNetDriver.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/JoinSessionCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/LeaderboardBlueprintLibrary.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/LogoutCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineBeacon.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineBeaconClient.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineBeaconHost.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineBeaconHostObject.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineBlueprintCallProxyBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineSessionClient.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/OnlineSubsystemUtils.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/PartyBeaconClient.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/PartyBeaconHost.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/PartyBeaconState.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/QuitMatchCallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/ShowLoginUICallbackProxy.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/TestBeaconClient.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/TestBeaconHost.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/TurnBasedBlueprintLibrary.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/VoiceEngineImpl.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/VoiceInterfaceImpl.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/VoicePacketImpl.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestAchievementsInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestCloudInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestEntitlementsInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestExternalUIInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestFriendsInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestIdentityInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestKeyValuePairs.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestLeaderboardInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestMessageInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestSessionInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestSharingInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestTimeInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestTitleFileInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestUserInterface.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Online/OnlineSubsystemUtils/Private/Tests/TestVoice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/SSL/Private/SslCertificateManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/SSL/Private/SslModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/Stomp/Private/StompClient.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/Stomp/Private/StompCommand.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/Stomp/Private/StompFrame.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/Stomp/Private/StompMessage.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/Stomp/Private/StompModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/Voice/Private/VoiceCodecOpus.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/Voice/Private/VoiceModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/Voice/Private/Linux/VoiceModuleLinux.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/Voice/Private/Mac/VoiceModuleMac.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/Voice/Private/Windows/VoiceCaptureWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/Voice/Private/Windows/VoiceModuleWindows.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/WebSockets/Private/WebSocketsModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/WebSockets/Private/Lws/LwsWebSocket.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Online/XMPP/Private/XmppConnection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/XMPP/Private/XmppModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/XMPP/Private/XmppNull.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Online/XMPP/Private/XmppTests.cpp" \
@@ -4137,7 +4649,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLDrv.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLES2.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLES31.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLESDeferred.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLIndexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLQuery.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLRenderTarget.cpp" \
@@ -4152,7 +4664,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLVertexDeclaration.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/OpenGLViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/Android/AndroidEGL.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/Android/AndroidES31OpenGL.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/Android/AndroidESDeferredOpenGL.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/Android/AndroidOpenGL.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/HTML5/HTML5OpenGL.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/OpenGLDrv/Private/IOS/IOSOpenGL.cpp" \
@@ -4170,36 +4682,47 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/PacketHandlers/EncryptionComponents/SymmetricEncryption/BlockEncryption/XORBlockEncryptor/Private/XORBlockEncryptor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PacketHandlers/EncryptionComponents/SymmetricEncryption/StreamEncryption/StreamEncryptionHandlerComponent/Private/StreamEncryptionHandlerComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PacketHandlers/EncryptionComponents/SymmetricEncryption/StreamEncryption/XORStreamEncryptor/Private/XORStreamEncryptor.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/PacketHandlers/PacketHandler/Private/HandlerComponentFactory.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PacketHandlers/PacketHandler/Private/PacketHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PacketHandlers/ReliabilityHandlerComponent/Private/ReliabilityHandlerComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PakFile/Private/IPlatformFilePak.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PakFile/Private/SignedArchiveReader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PerfCounters/Private/PerfCounters.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PerfCounters/Private/PerfCountersModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/PerfCounters/Private/ZeroLoad.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/PhysXFormats/Private/PhysXFormats.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Portal/LauncherCheck/Private/LauncherCheckModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Messages/Private/PortalMessagesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Proxies/Private/PortalProxiesModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Portal/Proxies/Private/Account/PortalUserLoginProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Portal/Proxies/Private/Account/PortalUserProxy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Portal/Proxies/Private/Application/PortalApplicationWindowProxy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Rpc/Private/PortalRpcLocator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Rpc/Private/PortalRpcModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Rpc/Private/PortalRpcResponder.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Portal/Rpc/Private/PortalRpcServer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Services/Private/PortalServiceLocator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Portal/Services/Private/PortalServicesModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/CustomBuildSteps.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/LocalizationDescriptor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/ModuleDescriptor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/PluginDescriptor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/PluginManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/ProjectDescriptor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/ProjectManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/ProjectsModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Projects/Private/VersionManifest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/BoundShaderStateCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/DynamicRHI.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/GPUDefragAllocator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/GPUProfiler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/RHI.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/RHICommandList.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/RHIUtilities.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/Android/AndroidDynamicRHI.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/Apple/AppleDynamicRHI.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/HTML5/HTML5DynamicRHI.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/Linux/LinuxDynamicRHI.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/WinRT/WinRTDynamicRHI.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RHI/Private/Windows/WindowsDynamicRHI.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RenderCore/Private/RenderCore.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RenderCore/Private/RenderResource.cpp" \
@@ -4208,10 +4731,11 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/AtmosphereRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/AtmosphereTextures.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/BasePassRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CapsuleShadowRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ClearQuad.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ConvertToUniformMesh.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CustomDepthRendering.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DecalRenderingForwardShading.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DebugViewModeRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DecalRenderingShared.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DeferredShadingRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DepthRendering.cpp" \
@@ -4220,14 +4744,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DistanceFieldObjectManagement.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DistanceFieldScreenGridLighting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DistanceFieldShadowing.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DistanceFieldSpecularOcclusion.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DistanceFieldSurfaceCacheLighting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DistortionRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/DrawingPolicy.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/EditorCompositeParams.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/FogRendering.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ForwardBasePassRendering.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ForwardShadingRenderer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ForwardTranslucentRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/GPUBenchmark.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/GammaCorrection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/GlobalDistanceField.cpp" \
@@ -4235,6 +4757,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/HeightfieldLighting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/IndirectLightingCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightFunctionRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightGridInjection.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightMapDensityRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightMapRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightPropagationVolume.cpp" \
@@ -4242,12 +4765,24 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightSceneInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/LightShaftRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MaterialTexCoordScalesRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MeshTexCoordSizeAccuracyRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MobileBasePassRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MobileDecalRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MobileSceneCaptureRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MobileShadingRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MobileTranslucentRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/MonoscopicFarFieldRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PlanarReflectionRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PreCullTriangles.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PrimitiveDistanceAccuracyRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PrimitiveSceneInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ReflectionEnvironment.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ReflectionEnvironmentCapture.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ReflectionEnvironmentDiffuseIrradiance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/Renderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/RendererScene.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/RequiredTextureResolutionRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/SceneCaptureRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/SceneCore.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/SceneHitProxyRendering.cpp" \
@@ -4256,24 +4791,29 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/SceneVisibility.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ShaderBaseClasses.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ShaderComplexityRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ShadowDepthRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ShadowRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ShadowSetup.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/ShadowSetupMobile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/SurfelTree.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/SystemTextures.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/TiledDeferredLightRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/TranslucentLighting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/TranslucentRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/VelocityRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/WideCustomResolveShaders.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/CompositionLighting.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/PostProcessAmbient.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/PostProcessAmbientOcclusion.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/PostProcessDeferredDecals.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/PostProcessLpvIndirect.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/PostProcessMeshDecals.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/CompositionLighting/PostProcessPassThrough.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessAA.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessBloomSetup.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessBokehDOF.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessBokehDOFRecombine.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessBufferInspector.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessBusyWait.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessCircleDOF.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessCombineLUTs.cpp" \
@@ -4295,14 +4835,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessMotionBlur.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessNoiseBlur.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessOutput.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessSceneColorFringe.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessSelectionOutline.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessStreamingAccuracyLegend.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessSubsurface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessTemporalAA.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessTestImage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessTonemap.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessUpscale.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessVisualizeBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessVisualizeComplexity.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessVisualizeHDR.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessWeightedSampleSum.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/PostProcessing.cpp" \
@@ -4311,6 +4852,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/SceneFilterRendering.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/SceneRenderTargets.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/ScreenSpaceReflections.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/VisualizeShadingModels.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Renderer/Private/PostProcess/VisualizeTexture.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RuntimeAssetCache/Private/RuntimeAssetCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/RuntimeAssetCache/Private/RuntimeAssetCacheAsyncWorker.cpp" \
@@ -4330,6 +4872,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Serialization/Private/Backends/JsonStructDeserializerBackend.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Serialization/Private/Backends/JsonStructSerializerBackend.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Serialization/Private/Tests/StructSerializerTest.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SessionMessages/Private/SessionMessagesModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SessionServices/Private/SessionInfo.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SessionServices/Private/SessionInstanceInfo.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SessionServices/Private/SessionManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SessionServices/Private/SessionService.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SessionServices/Private/SessionServicesModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/ShaderCore/Private/Shader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/ShaderCore/Private/ShaderCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/ShaderCore/Private/ShaderCore.cpp" \
@@ -4339,12 +4887,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/AnalogCursor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/Menu.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/MenuStack.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/NavigationConfig.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateApplication.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateIcon.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Application/SlateSettings.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/Commands.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/GenericCommands.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/InputBindingManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/InputChord.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/UIAction.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/UICommandDragDropOp.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/UICommandInfo.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Commands/UICommandList.cpp" \
@@ -4363,6 +4913,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Layout/InertialScrollManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Layout/Overscroll.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Layout/ScrollyZoomy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/MetaData/DriverMetaData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/MultiBox/MultiBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/MultiBox/MultiBoxBuilder.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/MultiBox/MultiBoxCustomization.cpp" \
@@ -4394,11 +4945,15 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/PlainTextLayoutMarshaller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/RichTextLayoutMarshaller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/RichTextMarkupProcessing.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/RunUtils.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/ShapedTextCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateHyperlinkRun.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateImageRun.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlatePasswordRun.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateTextHighlightRunRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateTextLayout.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateTextRun.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateTextUnderlineLineHighlighter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SlateWidgetRun.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SyntaxHighlighterTextLayoutMarshaller.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/SyntaxTokenizer.cpp" \
@@ -4408,13 +4963,13 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/TextRange.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/Android/AndroidPlatformTextField.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/IOS/IOSPlatformTextField.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Framework/Text/Tests/RichTextMarkupProcessingTest.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/SCanvas.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/SInvalidationPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/SToolTip.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/SViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/SWeakWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Colors/SColorBlock.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Colors/SColorGradingWheel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Colors/SColorSpectrum.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Colors/SColorWheel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Docking/SDockTab.cpp" \
@@ -4425,14 +4980,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SButton.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SCheckBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SComboButton.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SEditableLabel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SEditableText.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SEditableTextBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SExpandableButton.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SInputKeySelector.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SMenuAnchor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SMultiLineEditableTextBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SRotatorInputBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SSearchBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SSlider.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SSpinBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SSubMenuHandler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SSuggestionTextBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/STextComboBox.cpp" \
@@ -4444,8 +5002,10 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Input/SVolumeControl.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/LayerManager/SLayerManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/LayerManager/STooltipPresenter.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SBackgroundBlur.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SBorder.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SBox.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SConstraintCanvas.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SDPIScaler.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SExpandableArea.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SFxWidget.cpp" \
@@ -4459,6 +5019,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SScaleBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SScissorRectBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SScrollBar.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SScrollBarTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SScrollBorder.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SScrollBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SSeparator.cpp" \
@@ -4466,23 +5027,25 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SSplitter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SUniformGridPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SWidgetSwitcher.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SWindowTitleBarArea.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Layout/SWrapBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Notifications/SErrorHint.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Notifications/SErrorText.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Notifications/SNotificationList.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Notifications/SPopUpErrorText.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Notifications/SProgressBar.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/ITextEditorWidget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/ISlateEditableTextWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/SInlineEditableTextBlock.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/SMultiLineEditableText.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/SRichTextBlock.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/STextBlock.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/SlateEditableTextLayout.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/SlateEditableTextTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Text/TextBlockLayout.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Views/SExpanderArrow.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Views/SHeaderRow.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Views/SListPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Slate/Private/Widgets/Views/STableViewBase.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Slate/Public/Widgets/Layout/SConstraintCanvas.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Children.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/SlateCoreClasses.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/SlateCoreModule.cpp" \
@@ -4497,18 +5060,24 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/CompositeFont.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontBulkData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontCache.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontCacheCompositeFont.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontCacheFreeType.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontCacheHarfBuzz.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontFaceInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontMeasure.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontProviderInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/FontTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/LegacySlateFontInfoCache.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/SlateFontInfo.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/SlateFontRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Fonts/SlateTextShaper.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Input/DragAndDrop.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Input/Events.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Input/HittestGrid.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Input/Reply.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/ArrangedChildren.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/ArrangedWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/Geometry.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/LayoutGeometry.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/LayoutUtils.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/SlateRect.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Layout/Visibility.cpp" \
@@ -4518,20 +5087,24 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/DrawElements.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/ElementBatcher.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/RenderingCommon.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/RenderingPolicy.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/ShaderResourceManager.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/SlateDrawBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Rendering/SlateRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Sound/NullSlateSoundDevice.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Sound/SlateSound.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Stats/SlateStats.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/CoreStyle.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateBrush.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateColor.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateIconFinder.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateStyleRegistry.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateStyleSet.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateTypes.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateWidgetStyleAsset.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateWidgetStyleContainerBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/SlateWidgetStyleContainerInterface.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Styling/StyleDefaults.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Textures/SlateIcon.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Textures/TextureAtlas.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Types/PaintArgs.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Types/WidgetStyle.cpp" \
@@ -4543,10 +5116,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Widgets/SPanel.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Widgets/SWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateCore/Private/Widgets/SWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateNullRenderer/Private/SlateNullRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateNullRenderer/Private/SlateNullRendererModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/Slate3DRenderer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateAtlasedTextureResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateElementIndexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateElementVertexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateMaterialResource.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateMaterialShader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateNativeTextureResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlatePostProcessResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlatePostProcessor.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateRHIFontTexture.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateRHIRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateRHIRendererModule.cpp" \
@@ -4555,8 +5135,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateRHITextureAtlas.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateShaders.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateUTextureResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SlateRHIRenderer/Private/SlateUpdatableBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/IPAddress.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/MultichannelTCP.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/MultichannelTcpGlobals.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/NetworkMessage.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/ServerTOC.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/SocketSubsystem.cpp" \
@@ -4566,17 +5147,19 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/BSDIPv6Sockets/SocketsBSDIPv6.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/BSDSockets/SocketSubsystemBSD.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/BSDSockets/SocketsBSD.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/HTML5/Device/SocketSubsystem.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/HTML5/Device/SocketSubsystemHTML5.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/HTML5/Simulator/IPAddressX.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/HTML5/Simulator/SocketSubsystem.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/HTML5/Simulator/SocketSubsystemHTML5Simulator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/HTML5/Simulator/SocketX.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/IOS/SocketSubsystemIOS.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/Linux/SocketSubsystemLinux.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/Mac/SocketSubsystemMac.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/WinRT/SocketSubsystemWinRT.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Sockets/Private/Windows/SocketSubsystemWindows.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/StreamingFile/Private/StreamingNetworkPlatformFile.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/StreamingPauseRendering/Private/StreamingPauseRendering.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SynthBenchmark/Private/FractalBenchmark.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SynthBenchmark/Private/RayIntersectBenchmark.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/SynthBenchmark/Private/SynthBenchmarkPrivate.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Toolbox/Private/ToolboxModule.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UE4Game/Private/UE4Game.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/DragDropOperation.cpp" \
@@ -4590,14 +5173,17 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/WidgetLayoutLibrary.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/WidgetTree.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieScene2DTransformSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieScene2DTransformTemplate.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieScene2DTransformTrack.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieScene2DTransformTrackInstance.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieSceneMarginSection.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieSceneMarginTemplate.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieSceneMarginTrack.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieSceneMarginTrackInstance.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieSceneWidgetMaterialTemplate.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/MovieSceneWidgetMaterialTrack.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/UMGSequencePlayer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/WidgetAnimation.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/WidgetAnimationBinding.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Animation/WidgetMaterialTrackUtilities.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Binding/BoolBinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Binding/BrushBinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Binding/CheckedStateBinding.cpp" \
@@ -4611,6 +5197,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Binding/VisibilityBinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Binding/WidgetBinding.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Blueprint/AsyncTaskDownloadImage.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/BackgroundBlur.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/BackgroundBlurSlot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/Border.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/BorderSlot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/Button.cpp" \
@@ -4630,6 +5218,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/HorizontalBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/HorizontalBoxSlot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/Image.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/InputKeySelector.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/InvalidationBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/ListView.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/MenuAnchor.cpp" \
@@ -4643,6 +5232,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/PanelSlot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/PanelWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/ProgressBar.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/RetainerBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/RichTextBlock.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/RichTextBlockDecorator.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/SafeZone.cpp" \
@@ -4659,6 +5249,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/SpinBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/TableViewBase.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/TextBlock.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/TextWidgetTypes.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/Throbber.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/TileView.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/UniformGridPanel.cpp" \
@@ -4669,12 +5260,22 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/Visual.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/Widget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WidgetComponent.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WidgetInteractionComponent.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WidgetSwitcher.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WidgetSwitcherSlot.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WindowTitleBarArea.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WindowTitleBarAreaSlot.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WrapBox.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Components/WrapBoxSlot.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SMeshWidget.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SObjectWidget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SRetainerWidget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SWorldWidgetScreenLayer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SlateDataSheet.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SlateVectorArtData.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/SlateVectorArtInstanceData.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/UMGDragDropOp.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UMG/Private/Slate/WidgetRenderer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UnrealAudio/Private/UnrealAudio.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UnrealAudio/Private/UnrealAudioBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UnrealAudio/Private/UnrealAudioDecode.cpp" \
@@ -4698,23 +5299,65 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/UnrealAudio/Private/Tests/UnrealAudioTestGenerators.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UtilityShaders/Private/ClearReplacementShaders.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UtilityShaders/Private/MediaShaders.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/UtilityShaders/Private/OculusShaders.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UtilityShaders/Private/OneColorShader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UtilityShaders/Private/ResolveShader.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/UtilityShaders/Private/UtilityShaders.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/VectorVM/Private/VectorVM.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VectorVM/Private/Tests/VectorVMTests.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanCommandBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanCommands.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanDebug.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanDevice.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanIndexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanLayers.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanMemory.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanPendingState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanPipeline.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanQuery.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanQueue.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanRHI.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanRenderTarget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanShaders.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanState.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanStructuredBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanSwapChain.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanTexture.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanUAV.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanUniformBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanUtil.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanVertexBuffer.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanVertexDeclaration.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/VulkanRHI/Private/VulkanViewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/SWebBrowser.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserApp.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserByteResource.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserHandler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/SWebBrowserView.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserAdapter.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserModule.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserPopupFeatures.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserSingleton.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserViewport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebBrowserWindow.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebJSFunction.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebJSScripting.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebJSStructDeserializerBackend.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/WebJSStructSerializerBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/Android/AndroidJSScripting.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/Android/AndroidJSStructDeserializerBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/Android/AndroidJSStructSerializerBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/Android/AndroidWebBrowserDialog.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/Android/AndroidWebBrowserWidget.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/Android/AndroidWebBrowserWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFBrowserApp.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFBrowserByteResource.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFBrowserHandler.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFBrowserPopupFeatures.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFCookieManager.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFJSScripting.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFJSStructDeserializerBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFJSStructSerializerBackend.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/CEF/CEFWebBrowserWindow.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WebBrowser/Private/IOS/IOSPlatformWebBrowser.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WidgetCarousel/Private/SCarouselNavigationBar.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WidgetCarousel/Private/WidgetCarouselModule.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/WidgetCarousel/Private/WidgetCarouselStyle.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Windows/AudioMixerXAudio2/Private/AudioMixerPlatformWindows.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Windows/AudioMixerXAudio2/Private/AudioMixerPlatformXAudio2.cpp" \
+	"$$unrealRootPath/Engine/Source/Runtime/Windows/AudioMixerXAudio2/Private/AudioMixerXAudio2.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11Commands.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11ConstantBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11Device.cpp" \
@@ -4733,36 +5376,9 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11VertexBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11VertexDeclaration.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11Viewport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/WinRT/WinRTD3D11Device.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/WinRT/WinRTD3D11Viewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/Windows/WindowsD3D11ConstantBuffer.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/Windows/WindowsD3D11Device.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D11RHI/Private/Windows/WindowsD3D11Viewport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Commands.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12ConstantBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Device.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12DirectCommandListManager.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12IndexBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Query.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12RHI.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12RenderTarget.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Resources.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Shaders.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12State.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12StateCache.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12StructuredBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Texture.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12UAV.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12UniformBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Util.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12VertexBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12VertexDeclaration.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/D3D12Viewport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/WinRT/WinRTD3D12Device.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/WinRT/WinRTD3D12Viewport.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/Windows/WindowsD3D12ConstantBuffer.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/Windows/WindowsD3D12Device.cpp" \
-	"$$unrealRootPath/Engine/Source/Runtime/Windows/D3D12RHI/Private/Windows/WindowsD3D12Viewport.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/UnrealAudioWasapi/Private/UnrealAudioDeviceWasapi.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/UnrealAudioXAudio2/Private/UnrealAudioDeviceXAudio2.cpp" \
 	"$$unrealRootPath/Engine/Source/Runtime/Windows/XAudio2/Private/XAudio2Buffer.cpp" \
@@ -4799,9 +5415,6 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/PaperTileSet.cpp" \
 	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/TileMapBlueprintLibrary.cpp" \
 	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Rendering/MaterialExpressionSpriteTextureSampler.cpp" \
-	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Rendering/PaperBatchComponent.cpp" \
-	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Rendering/PaperBatchManager.cpp" \
-	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Rendering/PaperBatchSceneProxy.cpp" \
 	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Terrain/PaperTerrainActor.cpp" \
 	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Terrain/PaperTerrainComponent.cpp" \
 	"$$unrealRootPath/Engine/Plugins/2D/Paper2D/Source/Paper2D/Private/Terrain/PaperTerrainMaterial.cpp" \
@@ -4947,8 +5560,12 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Developer/UObjectPlugin/Source/UObjectPlugin/Private/UObjectPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Source/VisualStudioSourceCodeAccess/Private/VisualStudioSourceCodeAccessModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Source/VisualStudioSourceCodeAccess/Private/VisualStudioSourceCodeAccessor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Source/VisualStudioSourceCodeAccess/Private/VisualStudioSourceCodeAccessorWrapper.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Developer/XCodeSourceCodeAccess/Source/XCodeSourceCodeAccess/Private/XCodeSourceCodeAccessModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Developer/XCodeSourceCodeAccess/Source/XCodeSourceCodeAccess/Private/XCodeSourceCodeAccessor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/AudioCapture/Source/AudioCapture/Private/AudioCapture.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/AudioCapture/Source/AudioCapture/Private/AudioRecordingManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/AudioCapture/Source/AudioCapture/Private/RtAudio.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Private/EpicSurvey.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Private/EpicSurveyCommands.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Private/EpicSurveyModule.cpp" \
@@ -4961,11 +5578,39 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Private/SurveyPage.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Private/SurveyTitleCdnStorage.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/EpicSurvey/Source/EpicSurvey/Private/SurveyTitleLocalStorage.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Editor/MacGraphicsSwitching/Source/MacGraphicsSwitching/Private/MacGraphicsSwitchingModule.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Editor/MacGraphicsSwitching/Source/MacGraphicsSwitching/Private/MacGraphicsSwitchingSettings.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Editor/MacGraphicsSwitching/Source/MacGraphicsSwitching/Private/MacGraphicsSwitchingSettingsDetails.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Editor/MacGraphicsSwitching/Source/MacGraphicsSwitching/Private/MacGraphicsSwitchingStyle.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Editor/MacGraphicsSwitching/Source/MacGraphicsSwitching/Private/MacGraphicsSwitchingWidget.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimation/Private/AudioCurveSourceComponent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimation/Private/FacialAnimationModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor/Private/FacialAnimationBulkImporterSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor/Private/FacialAnimationEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/FacialAnimation/Source/FacialAnimationEditor/Private/SFacialAnimationBulkImporter.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/AssetTypeActions_GameplayTagAssetBase.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagContainerCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagQueryCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagSearchFilter.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_LiteralGameplayTag.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareBase.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagAssetInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagAssetInterfaceSingleTags.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagContainer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_MultiCompareGameplayTagContainerSingleTags.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_SwitchGameplayTag.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsK2Node_SwitchGameplayTagContainer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/GameplayTagsSettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SAddNewGameplayTagWidget.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SGameplayTagContainerGraphPin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SGameplayTagGraphPin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SGameplayTagQueryGraphPin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SGameplayTagQueryWidget.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SGameplayTagWidget.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SGraphNode_MultiCompareGameplayTag.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/GameplayTagsEditor/Source/GameplayTagsEditor/Private/SRenameGameplayTagDialog.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Private/AndroidProfileWizard.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Private/IOSProfileWizard.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Private/MobileLauncherProfileWizard.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/MobileLauncherProfileWizard/Source/MobileLauncherProfileWizard/Private/SProfileWizardUI.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Private/DefaultPluginWizardDefinition.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Private/PluginBrowserModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Private/PluginHelpers.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/PluginBrowser/Source/PluginBrowser/Private/PluginMetadataObject.cpp" \
@@ -4980,6 +5625,19 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Private/ReimportSpeedTreeFactory.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Private/SpeedTreeImportFactory.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Editor/SpeedTreeImporter/Source/SpeedTreeImporter/Private/SpeedTreeImporterModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Editor/SuperSearchEditor/Source/SuperSearchEditor/Private/SuperSearchSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter/Private/AlembicImportFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter/Private/AlembicImportOptions.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicImporter/Private/AlembicImporterModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AbcAssetImportData.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AbcImportLogger.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AbcImportSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AbcImportSettingsCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AbcImportUtilities.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AbcImporter.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AlembicLibraryModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/AlembicTestCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/AlembicImporter/Source/AlembicLibrary/Private/Runnables/AbcMeshDataImportRunnable.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats/Private/BlueprintStats.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/BlueprintStats/Source/BlueprintStats/Private/BlueprintStatsModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/CharacterAI/Source/CharacterAI/Private/CharacterAIModule.cpp" \
@@ -5007,20 +5665,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Experimental/HTML5Networking/Source/HTML5Networking/Private/WebSocketNetDriver.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/HTML5Networking/Source/HTML5Networking/Private/WebSocketServer.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/HTML5Networking/Source/HTML5Networking/Private/WebsocketConnection.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/K2Node_LiveEditObject.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditor.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorBlueprint.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorBlueprintBindingWizard.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorBroadcaster.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorConfigWindow.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorConnectionWindow.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorDeviceSetupWindow.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorDeviceSetupWizard.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorKismetLibrary.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorManager.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorUserData.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/LiveEditorWizardBase.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Experimental/LiveEditor/Source/LiveEditor/Private/SGraphPinLiveEditVar.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVR/Private/OSVR.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVR/Private/OSVRCustomPresent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVR/Private/OSVREntryPoint.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVR/Private/OSVRHMD.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVR/Private/OSVRHMDDescription.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVR/Private/OSVRRender.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVRInput/Private/OSVRInput.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/OSVR/Source/OSVRInput/Private/OSVRInputDevice.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaCollisionHandler.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaLib/src/Body/paBody.cpp" \
@@ -5064,61 +5716,147 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaLib/src/Utility/paHandleManager.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaLib/src/Utility/paPointerList.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/Phya/Source/Phya/Private/PhyaLib/src/Utility/paRnd.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/RawInput/Source/RawInput/Private/RawInput.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/RawInput/Source/RawInput/Private/RawInputFunctionLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/RawInput/Source/RawInput/Private/RawInputSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/RawInput/Source/RawInput/Private/Windows/RawInputWindows.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/SimpleHMD/Source/SimpleHMD/Private/SimpleHMD.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/StereoPanorama/Source/StereoPanorama/Private/SceneCapturer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/StereoPanorama/Source/StereoPanorama/Private/StereoCapturePawn.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/StereoPanorama/Source/StereoPanorama/Private/StereoPanorama.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/StereoPanorama/Source/StereoPanorama/Private/StereoPanoramaManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Experimental/StereoPanorama/Source/StereoPanorama/Private/StereoStaticMeshComponent.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/StructBox/Source/StructBox/Private/StructBox.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/StructBox/Source/StructBox/Private/StructBoxLibrary.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Experimental/StructBox/Source/StructBox/Private/StructBoxModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Private/AndroidMediaLog.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Private/AndroidMediaModule.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Private/AndroidMediaPlayer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Private/Player/AndroidMediaPlayer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMedia/Private/Player/AndroidMediaTracks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaEditor/Private/AndroidFileMediaSourceFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaEditor/Private/AndroidMediaEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AndroidMedia/Source/AndroidMediaFactory/Private/AndroidMediaFactoryModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Private/AvfMediaModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Private/Player/AvfMediaPlayer.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Private/Tracks/AvfMediaTrack.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Private/Tracks/AvfMediaVideoTrack.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMedia/Private/Player/AvfMediaTracks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMediaEditor/Private/AvfFileMediaSourceFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMediaEditor/Private/AvfMediaEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMediaFactory/Private/AvfMediaFactoryClasses.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/AvfMedia/Source/AvfMediaFactory/Private/AvfMediaFactoryModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/MediaPlayerEditorClasses.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/MediaPlayerEditorModule.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/MediaPlayerEditorToolkit.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools/FileMediaSourceActions.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools/MediaPlayerActions.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools/MediaPlaylistActions.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools/MediaSoundWaveActions.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools/MediaSourceActions.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/AssetTools/MediaTextureActions.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaPlayerFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Customizations/BaseMediaSourceCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Customizations/FileMediaSourceCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Customizations/MediaSoundWaveCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Customizations/MediaTextureCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Customizations/PlatformMediaSourceCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/FileMediaSourceFactoryNew.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaPlayerFactoryNew.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaPlaylistFactoryNew.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaSoundWaveFactoryNew.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaSubtitlesFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaSubtitlesFactoryNew.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/MediaTextureFactoryNew.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/PlatformMediaSourceFactoryNew.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Factories/StreamMediaSourceFactoryNew.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Models/MediaPlayerEditorCommands.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Models/MediaPlayerEditorViewport.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Toolkits/MediaPlayerEditorToolkit.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Toolkits/MediaPlaylistEditorToolkit.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorInfo.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorMedia.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorOutput.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorOverlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorPlaylist.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorStats.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlayerEditorViewer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlaylistEditorDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MediaPlayerEditor/Source/MediaPlayerEditor/Private/Widgets/SMediaPlaylistEditorMedia.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMedia/Private/MfMediaModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMedia/Private/Mf/MfMediaByteStream.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMedia/Private/Mf/MfMediaResolver.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMedia/Private/Mf/MfMediaUtils.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMedia/Private/Player/MfMediaPlayer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMedia/Private/Player/MfMediaTracks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMediaEditor/Private/MfFileMediaSourceFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMediaEditor/Private/MfMediaEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/MfMedia/Source/MfMediaFactory/Private/MfMediaFactoryModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/WmfMediaModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Player/WmfMediaPlayer.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Tracks/WmfMediaTrack.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Player/WmfMediaTracks.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Wmf/WmfMediaByteStream.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Wmf/WmfMediaResolver.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Wmf/WmfMediaSession.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMedia/Private/Wmf/WmfMediaUtils.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMediaEditor/Private/WmfFileMediaSourceFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMediaEditor/Private/WmfMediaEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMediaFactory/Private/WmfMediaFactoryClasses.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Media/WmfMedia/Source/WmfMediaFactory/Private/WmfMediaFactoryModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/MessagingDebuggerModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Models/MessagingDebuggerModel.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/SMessagingDebugger.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Breakpoints/SMessagingBreakpoints.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Breakpoints/SMessagingBreakpointsTableRow.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/EndpointDetails/SMessagingAddressTableRow.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/EndpointDetails/SMessagingEndpointDetails.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Endpoints/SMessagingEndpoints.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Endpoints/SMessagingEndpointsFilterBar.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Endpoints/SMessagingEndpointsTableRow.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Graph/SMessagingGraph.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/History/SMessagingHistory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/History/SMessagingHistoryTableRow.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Interceptors/SMessagingInterceptors.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Interceptors/SMessagingInterceptorsTableRow.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageData/SMessagingMessageData.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/MessageDetails/SMessagingMessageDetails.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Toolbar/SMessagingDebuggerToolbar.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Types/SMessagingTypes.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Types/SMessagingTypesFilterBar.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/MessagingDebugger/Source/MessagingDebugger/Private/Widgets/Types/SMessagingTypesTableRow.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/TcpMessagingModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/Transport/TcpDeserializedMessage.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/Transport/TcpMessageTransport.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/Transport/TcpMessageTransportConnection.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/TcpMessaging/Source/TcpMessaging/Private/Transport/TcpSerializeMessageTask.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/UdpMessagingClasses.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/UdpMessagingModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Tests/UdpMessageSegmenterTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Tests/UdpMessageTransportTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Tests/UdpSerializeMessageTaskTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/UdpDeserializedMessage.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/UdpMessageBeacon.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/UdpMessageProcessor.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/UdpMessageSegmenter.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/UdpMessageTransport.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/UdpSerializeMessageTask.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Transport/Tests/UdpMessageSegmenterTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Tunnel/UdpMessageTunnel.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Messaging/UdpMessaging/Source/UdpMessaging/Private/Tunnel/UdpMessageTunnelConnection.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/ActorSequenceEditor/Source/ActorSequenceEditor/Private/ActorSequenceComponentCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/ActorSequenceEditor/Source/ActorSequenceEditor/Private/ActorSequenceEditor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/ActorSequenceEditor/Source/ActorSequenceEditor/Private/ActorSequenceEditorTabSummoner.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/LevelSequenceEditorCommands.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/LevelSequenceEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/LevelSequenceEditorToolkit.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/AssetTools/LevelSequenceActions.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/CinematicViewport/FilmOverlays.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/CinematicViewport/SCinematicLevelViewport.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/CinematicViewport/SCinematicTransportRange.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Factories/LevelSequenceFactoryNew.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Misc/LevelSequenceEditorHelpers.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Misc/LevelSequenceEditorSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/LevelSequenceEditor/Source/LevelSequenceEditor/Private/Misc/LevelSequenceEditorSpawnRegister.cpp" \
+	"$$unrealRootPath/Engine/Plugins/MovieScene/MatineeToLevelSequence/Source/MatineeToLevelSequence/Private/MatineeToLevelSequenceModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private/NUTUnrealEngine4.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private/UnitTests/FTextCrash.cpp" \
+	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private/UnitTests/NetBitsTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private/UnitTests/PacketLimitTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private/UnitTests/PacketLimitTest_Oodle.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Source/NUTUnrealEngine4/Private/UnitTests/UTT61_DebugReplicateData.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/ClientUnitTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/NUTActor.cpp" \
@@ -5127,6 +5865,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/NUTUtilProfiler.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/NUTUtilReflection.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/NetcodeUnitTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/ProcessUnitTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/UnitTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/UnitTestCommandlet.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/UnitTestEnvironment.cpp" \
@@ -5144,13 +5883,225 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/UI/SLogWidget.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/UI/SLogWindow.cpp" \
 	"$$unrealRootPath/Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Source/NetcodeUnitTest/Private/UnitTests/VMReflection.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/GameCircleRuntimeSettings/Private/GameCircleRuntimeSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/GameCircleRuntimeSettings/Private/GameCircleRuntimeSettingsModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineAGSAchievementsClientCallbacks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineAGSCallbackManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineAGSGameCircleClientCallbacks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineAGSLeaderboardsClientCallbacks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineAGSPlayerClientCallbacks.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineAchievementsInterfaceGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineExternalUIInterfaceGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineFriendGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineFriendsInterfaceGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineIdentityInterfaceGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineLeaderboardInterfaceGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineStoreInterfaceGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineSubsystemGameCircle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGameCircle/Source/OnlineSubsystemGameCircle/Private/OnlineSubsystemGameCircleModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAchievementsInterfaceGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayAuthAction.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayLogin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayLogout.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayQueryAchievements.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayQueryInAppPurchases.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayReadLeaderboard.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineAsyncTaskGooglePlayShowLoginUI.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineExternalUIInterfaceGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineIdentityInterfaceGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineLeaderboardInterfaceGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlinePurchaseGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineStoreGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineStoreInterfaceGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineSubsystemGooglePlay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/Android/OnlineSubsystemGooglePlay/Source/Private/OnlineSubsystemGooglePlayModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineAchievementsInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineExternalUIInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineFriendsInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineIdentityInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineLeaderboardsInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlinePurchaseIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineSessionInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineSharedCloudInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineStoreIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineStoreInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineStoreKitHelper.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineSubsystemIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineSubsystemIOSModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineTurnBasedInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/OnlineUserCloudInterfaceIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/TurnBasedEventListener.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/TurnBasedMatchmakerDelegateIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/IOS/OnlineSubsystemIOS/Source/Private/TurnBasedMatchmakerIOS.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Hotfix/Private/HotfixModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Hotfix/Private/OnlineHotfixManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Hotfix/Private/UpdateManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Private/LobbyBeaconClient.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Private/LobbyBeaconHost.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Private/LobbyBeaconPlayerState.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Private/LobbyBeaconState.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Lobby/Private/LobbyModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Party/Private/Chatroom.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Party/Private/Party.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Party/Private/PartyGameState.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Party/Private/PartyMemberState.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Party/Private/PartyModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosBeaconClient.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosBeaconHost.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosEvaluator.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosRegionManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Qos/Private/QosStats.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Rejoin/Private/RejoinCheck.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineFramework/Source/Rejoin/Private/RejoinModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/LANBeacon.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/NamedInterfaces.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineAsyncTaskManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineError.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineKeyValuePair.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineMessage.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineNotification.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineNotificationHandler.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineNotificationTransportManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlinePartyInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineSessionSettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineStats.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineSubsystem.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineSubsystemImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/OnlineSubsystemModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystem/Source/Private/TurnBasedMatchInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemAmazon/Source/Private/OnlineIdentityAmazon.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemAmazon/Source/Private/OnlineSubsystemAmazon.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/OnlineSubsystemFacebookModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/IOS/OnlineFriendsFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/IOS/OnlineIdentityFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/IOS/OnlineSharingFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/IOS/OnlineSubsystemFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/IOS/OnlineUserFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/Windows/OnlineFriendsFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/Windows/OnlineIdentityFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemFacebook/Source/Private/Windows/OnlineSubsystemFacebook.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineAchievementsInterfaceNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineAsyncTaskManagerNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineIdentityNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineLeaderboardInterfaceNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineSessionInterfaceNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineSubsystemModuleNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemNull/Source/Private/OnlineSubsystemNull.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OVR_PlatformLoader.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OculusCreateSessionCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OculusEntitlementCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OculusFindSessionsCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OculusIdentityCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OculusNetConnection.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OculusNetDriver.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineAchievementsInterfaceOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineFriendsInterfaceOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineIdentityOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineLeaderboardInterfaceOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineMessageMultiTaskOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineMessageTaskManagerOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineSessionInterfaceOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineSubsystemOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineSubsystemOculusModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineUserCloudOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemOculus/Source/Private/OnlineVoiceOculus.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/IPAddressSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineAchievementsInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineAsyncTaskManagerSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineExternalUIInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineFriendsInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineIdentityInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineLeaderboardInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineSessionAsyncLobbySteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineSessionAsyncServerSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineSessionInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineSharedCloudInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineSubsystemModuleSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineSubsystemSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/OnlineUserCloudInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/SocketSubsystemSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/SocketsSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/SteamNetConnection.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/SteamNetDriver.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/SteamUtilities.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/VoiceEngineSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/VoiceInterfaceSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemSteam/Source/Private/VoicePacketSteam.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/K2Node_InAppPurchase.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/K2Node_InAppPurchaseQuery.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/K2Node_InAppPurchaseRestore.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/K2Node_LatentOnlineCall.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/K2Node_LeaderboardFlush.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/K2Node_LeaderboardQuery.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineBlueprintSupport/Private/OnlineBlueprintSupportModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/AchievementBlueprintLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/AchievementQueryCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/AchievementWriteCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/ConnectionCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/CreateSessionCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/DestroySessionCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/EndMatchCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/EndTurnCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/FindSessionsCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/FindTurnBasedMatchCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/InAppPurchaseCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/InAppPurchaseQueryCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/InAppPurchaseRestoreCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/IpConnection.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/IpNetDriver.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/JoinSessionCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/LeaderboardBlueprintLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/LeaderboardFlushCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/LeaderboardQueryCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/LogoutCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineBeacon.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineBeaconClient.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineBeaconHost.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineBeaconHostObject.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineEngineInterfaceImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlinePIESettings.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineSessionClient.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineSubsystemUtils.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/OnlineSubsystemUtilsModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/PartyBeaconClient.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/PartyBeaconHost.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/PartyBeaconState.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/QuitMatchCallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/ShowLoginUICallbackProxy.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/TestBeaconClient.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/TestBeaconHost.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/TurnBasedBlueprintLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/VoiceEngineImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/VoiceInterfaceImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/VoicePacketImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/OnlineSubsystemUtilitiesTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestAchievementsInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestCloudInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestEntitlementsInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestExternalUIInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestFriendsInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestIdentityInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestKeyValuePairs.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestLeaderboardInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestMessageInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestSessionInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestSharingInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestTimeInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestTitleFileInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestUserInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Private/Tests/TestVoice.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Advertising/IOSTapJoy/Source/IOSTapJoy/Private/IOSTapJoy.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Private/AnalyticsBlueprintLibrary.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/AnalyticsBlueprintLibrary/Source/AnalyticsBlueprintLibrary/Private/AnalyticsBlueprintLibraryModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnaltyicsMulticastEditor/Private/AnalyticsMulticastEditor.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/AnalyticsMulticast/Source/AnalyticsMulticast/Private/AnalyticsMulticast.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/Apsalar/IOSApsalar/Source/IOSApsalar/Private/IOSApsalar.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/Apsalar/Source/ApsalarEditor/Private/ApsalarEditor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/Apsalar/Source/IOSApsalar/Private/IOSApsalar.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/FileLogging/Source/FileLogging/Private/FileLogging.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/Flurry/IOSFlurry/Source/IOSFlurry/Private/IOSFlurry.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/Flurry/Source/FlurryEditor/Private/FlurryEditor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Analytics/Flurry/Source/IOSFlurry/Source/IOSFlurry/Private/IOSFlurry.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Source/AndroidDeviceProfileSelector/Private/AndroidDeviceProfileSelectorModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/AndroidMoviePlayer/Source/AndroidMoviePlayer/Private/AndroidMoviePlayer.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/AndroidMoviePlayer/Source/AndroidMoviePlayer/Private/AndroidMovieStreamer.cpp" \
@@ -5165,33 +6116,217 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Private/CustomMeshComponent.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/CustomMeshComponent/Source/CustomMeshComponent/Private/CustomMeshComponentPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Source/ExampleDeviceProfileSelector/Private/ExampleDeviceProfileSelectorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemBlueprintLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemComponent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemComponent_Abilities.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemDebugHUD.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemGlobals.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemLog.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemStats.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemTestAttributeSet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AbilitySystemTestPawn.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/AttributeSet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayAbilitiesExec.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayAbilitiesModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayAbilityBlueprint.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayAbilityTargetTypes.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayAbilityTypes.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueNotify_Actor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueNotify_HitImpact.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueNotify_Static.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueSet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayCueTranslator.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayDebuggerCategory_Abilities.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffect.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectAggregator.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectCalculation.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectCustomApplicationRequirement.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectExecutionCalculation.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectExtension.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectExtension_LifestealTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectExtension_ShieldTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectTemplate.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectTypes.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayEffectUIData.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayModMagnitudeCalculation.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayPrediction.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/GameplayTagResponseTable.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/TickableAttributeSetInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbility.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilitySet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_ActorPlacement.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_GroundTrace.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_Radius.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_SingleLineTrace.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetActor_Trace.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityTargetDataFilter.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityWorldReticle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbilityWorldReticle_ActorVisualization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbility_CharacterJump.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/GameplayAbility_Montage.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotionConstantForce.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotionJumpForce.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotionMoveToActorForce.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotionMoveToForce.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotionRadialForce.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotion_Base.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_MoveToLocation.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_NetworkSyncPoint.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_PlayMontageAndWait.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_Repeat.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_SpawnActor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_StartAbilityState.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_VisualizeTargeting.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAbilityActivate.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAbilityCommit.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAttributeChange.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAttributeChangeRatioThreshold.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitAttributeChangeThreshold.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitCancel.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitConfirm.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitConfirmCancel.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitDelay.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied_Self.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied_Target.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectBlockedImmunity.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectRemoved.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEffectStackChange.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayEvent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayTag.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitGameplayTagBase.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitInputPress.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitInputRelease.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitMovementModeChange.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitOverlap.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitTargetData.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_WaitVelocityChange.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/AssetTypeActions_GameplayAbilitiesBlueprint.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/AttributeBasedFloatDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/AttributeDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayAbilitiesBlueprintFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayAbilitiesEditor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayAbilitiesEditorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayAbilityGraph.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayAbilityGraphSchema.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayCueTagDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayEffectDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayEffectExecutionDefinitionDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayEffectExecutionScopedModifierInfoDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayEffectModifierMagnitudeDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/GameplayModEvaluationChannelSettingsDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/InheritableGameplayTagContainerDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/K2Node_GameplayCueEvent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/K2Node_LatentAbilityCall.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/SGameplayAttributeGraphPin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/SGameplayAttributeWidget.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilitiesEditor/Private/SGameplayCueEditor.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/GearVR/Source/GearVR/Private/GearVR.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GearVR/Source/GearVR/Private/GearVRFunctionLibrary.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/GearVR/Source/GearVR/Private/GearVRRender.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GearVR/Source/GearVR/Private/GearVRSplash.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRController/Source/GoogleVRController/Private/GoogleVRController.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRController/Source/GoogleVRController/Private/GoogleVRControllerEventManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRController/Source/GoogleVRController/Private/GoogleVRControllerFunctionLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/Source/GoogleVRHMD/Private/GoogleVRHMD.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/Source/GoogleVRHMD/Private/GoogleVRHMDFunctionLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/Source/GoogleVRHMD/Private/GoogleVRHMDRender.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/Source/GoogleVRHMD/Private/GoogleVRHMDViewerPreviews.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/GoogleVR/GoogleVRHMD/Source/GoogleVRHMD/Private/GoogleVRSplash.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/IOSDeviceProfileSelector/Source/IOSDeviceProfileSelector/Private/IOSDeviceProfileSelectorModule.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionBoneActor.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionControllerActor.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionControllerComponent.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionControllerPlugin.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionDevice.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionFunctionLibrary.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionHandActor.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotionController/Source/LeapMotionController/Private/LeapMotionImageComponent.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer/Private/LiveEditorListenServer.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer/Private/LiveEditorListenServerEngineHooks.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer/Private/LiveEditorListenServerObjectCache.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/LiveEditorListenServer/Source/LiveEditorListenServer/Private/LiveEditorTransactionHistory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/FLeapMotion.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapArm.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapBaseObject.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapBone.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapCircleGesture.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapController.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapEventInterface.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapFinger.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapFingerList.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapFrame.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapGesture.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapGestureList.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapHand.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapHandList.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapImage.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapImageList.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapInteractionBox.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapInterfaceUtility.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapKeyTapGesture.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapPointable.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapPointableList.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapScreenTapGesture.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapSwipeGesture.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapTool.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/LeapToolList.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/AnimBody/AnimBody.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/AnimBody/AnimBone.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/AnimBody/AnimFinger.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LeapMotion/Source/LeapMotion/Private/AnimBody/AnimHand.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LinuxDeviceProfileSelector/Source/LinuxDeviceProfileSelector/Private/LinuxDeviceProfileSelectorModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidEditor/Private/LocationServicesAndroidEditor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidImpl/Private/LocationServicesAndroidImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesAndroidImpl/Source/LocationServicesAndroidImpl/Private/LocationServicesAndroidImplModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source/LocationServicesBPLibrary/Private/LocationServicesBPLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesBPLibrary/Source/LocationServicesBPLibrary/Private/LocationServicesBPLibraryModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSEditor/Private/LocationServicesIOSEditor.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSImpl/Private/LocationServicesIOSImpl.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/LocationServicesIOSImpl/Source/LocationServicesIOSImpl/Private/LocationServicesIOSImplModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/MIDIDevice/Source/MIDIDevice/MIDIDeviceController.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/MIDIDevice/Source/MIDIDevice/MIDIDeviceManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/MIDIDevice/Source/MIDIDevice/MIDIDeviceModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/MobilePatchingUtils/Source/MobilePatchingUtils/Private/MobilePatchingLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/MobilePatchingUtils/Source/MobilePatchingUtils/Private/MobilePatchingUtils.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Nvidia/Ansel/Source/Ansel/Private/Ansel.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusAudio/Source/OculusAudio/Private/OculusAudio.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusAudio/Source/OculusAudio/Private/OculusAudioEffect.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusInput/Source/Private/OculusInput.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusInput/Source/Private/OculusInputCAPI.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusInput/Source/Private/OculusInputModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusLibrary/Source/OculusLibrary/Private/OculusFunctionLibrary.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusLibrary/Source/OculusLibrary/Private/OculusFunctionLibraryPlugin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftBoundaryComponent.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftCAPI.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftCommon.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftHMD.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftLayers.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftRender.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftRenderD3D.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftRenderD3D12.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftRenderGL.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/Private/KismetProceduralMeshLibrary.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/Private/ProceduralMeshComponent.cpp" \
-	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/Private/ProceduralMeshComponentPlugin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/OculusRiftSplash.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OculusRift/Source/OculusRift/Private/SceneCubemapCapturer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Private/OptionalMobileFeaturesBPLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/OptionalMobileFeaturesBPLibrary/Source/OptionalMobileFeaturesBPLibrary/Private/OptionalMobileFeaturesBPLibraryModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Private/OodleArchives.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Private/OodleHandlerComponent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PacketHandlers/CompressionComponents/Oodle/Source/OodleHandlerComponent/Private/OodleTrainerCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/AnimNode_WheelHandler.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/PhysXVehicleManager.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/PhysXVehiclesPlugin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/SimpleWheeledVehicleMovementComponent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/TireConfig.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/VehicleAnimInstance.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/VehicleWheel.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/WheeledVehicle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/WheeledVehicleMovementComponent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Private/WheeledVehicleMovementComponent4W.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Private/AnimGraphNode_WheelHandler.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Private/PhysXVehiclesEditorPlugin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Private/VehicleTransmissionDataCustomization.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehiclesEditor/Private/WheeledVehicleMovementComponent4WDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private/KismetProceduralMeshLibrary.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private/ProceduralMeshComponent.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponent/Private/ProceduralMeshComponentPlugin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Private/ProceduralMeshComponentDetails.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/ProceduralMeshComponent/Source/ProceduralMeshComponentEditor/Private/ProceduralMeshComponentEditorPlugin.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/SignificanceManager/Source/SignificanceManager/Private/SignificanceManager.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Private/SoundMod.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Private/SoundModPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/SoundMod/Source/SoundMod/Private/SoundModWave.cpp" \
@@ -5206,6 +6341,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Private/SteamVRFunctionLibrary.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Private/SteamVRHMD.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Private/SteamVRRender.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Private/SteamVRSplash.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVR/Private/SteamVRStereoLayers.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/Steam/SteamVR/Source/SteamVRController/Private/SteamVRController.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/TwitchLiveStreaming/Source/TwitchLiveStreaming/TwitchLiveStreaming.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/TwitchLiveStreaming/Source/TwitchLiveStreaming/TwitchProjectSettings.cpp" \
@@ -5214,14 +6351,14 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Runtime/WindowsDeviceProfileSelector/Source/WindowsDeviceProfileSelector/Private/WindowsDeviceProfileSelectorModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/WindowsMoviePlayer/Source/WindowsMoviePlayer/Private/WindowsMoviePlayer.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Runtime/WindowsMoviePlayer/Source/WindowsMoviePlayer/Private/WindowsMovieStreamer.cpp" \
-	"$$unrealRootPath/Engine/Plugins/ScriptGeneratorPlugin/Source/ScriptGeneratorPlugin/Private/GenericScriptCodeGenerator.cpp" \
-	"$$unrealRootPath/Engine/Plugins/ScriptGeneratorPlugin/Source/ScriptGeneratorPlugin/Private/LuaScriptCodeGenerator.cpp" \
-	"$$unrealRootPath/Engine/Plugins/ScriptGeneratorPlugin/Source/ScriptGeneratorPlugin/Private/ScriptCodeGeneratorBase.cpp" \
-	"$$unrealRootPath/Engine/Plugins/ScriptGeneratorPlugin/Source/ScriptGeneratorPlugin/Private/ScriptGeneratorPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptEditorPlugin/Private/ScriptBlueprintCompiler.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptEditorPlugin/Private/ScriptBlueprintEditor.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptEditorPlugin/Private/ScriptEditorPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptEditorPlugin/Private/ScriptFactory.cpp" \
+	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptGeneratorPlugin/Private/GenericScriptCodeGenerator.cpp" \
+	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptGeneratorPlugin/Private/LuaScriptCodeGenerator.cpp" \
+	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptGeneratorPlugin/Private/ScriptCodeGeneratorBase.cpp" \
+	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptGeneratorPlugin/Private/ScriptGeneratorPlugin.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptPlugin/Private/LuaIntegration.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptPlugin/Private/ScriptBlueprint.cpp" \
 	"$$unrealRootPath/Engine/Plugins/ScriptPlugin/Source/ScriptPlugin/Private/ScriptBlueprintGeneratedClass.cpp" \
@@ -5234,6 +6371,32 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/SlateRemoteClasses.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/SlateRemoteModule.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Slate/SlateRemote/Source/SlateRemote/Private/Server/SlateRemoteServer.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/EditorTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/Animation/AnimationBlueprintFastPathTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/SourceControl/SourceControlTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/AutoReimportTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/BlueprintAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/CollisionAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorAssetAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorBuildPromotionTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorOpenAssetAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorPerformanceTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorSettingsTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/EditorViewportFlagsTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/FbxAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/FeaturePackAutomationTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/GeometryTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/EditorTests/Source/EditorTests/Private/UnrealEd/LightingTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder/Private/FbxAutomationBuilder.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder/Private/FbxAutomationBuilderModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/FbxAutomationTestBuilder/Source/FbxAutomationTestBuilder/Private/FbxAutomationBuilderStyle.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/FunctionalTestingEditor/Source/Private/EditorAutomationModule.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/AutomationSpec.spec.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/RuntimeTests.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Slate/RichTextMarkupProcessingTest.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private/CompareScreenshotsCommandlet.cpp" \
+	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private/ScreenshotTools.cpp" \
 	"$$x7RootPath/Source/x7/GaucheObj.cpp" \
 	"$$x7RootPath/Source/x7/MyActor.cpp" \
 	"$$x7RootPath/Source/x7/x7.cpp" \

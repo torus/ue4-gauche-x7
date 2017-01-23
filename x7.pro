@@ -2,6 +2,7 @@
 # *DO NOT EDIT*
 
 TEMPLATE = aux
+CONFIG += c++14
 CONFIG -= console
 CONFIG -= app_bundle
 CONFIG -= qt
@@ -9,9 +10,9 @@ CONFIG -= qt
 TARGET = UE4 
 
 unrealRootPath=/home/toru/src/UnrealEngine
-x7RootPath=/home/toru/src/ue4/x7
+x7RootPath=/home/toru/src/ue4/x7 4.15
 
-gameProjectFile=/home/toru/src/ue4/x7/x7.uproject
+gameProjectFile=/home/toru/src/ue4/x7 4.15/x7.uproject
 build=mono $$unrealRootPath/Engine/Binaries/DotNET/UnrealBuildTool.exe
 
 args=$(ARGS)
@@ -88,6 +89,12 @@ DsymExporter-Linux-Shipping.commands = $$build DsymExporter Linux Shipping  $$ar
 DsymExporter-Linux-Test.commands = $$build DsymExporter Linux Test  $$args
 DsymExporter.commands = $$build DsymExporter Linux Development  $$args
 
+ShaderCacheTool-Linux-Debug.commands = $$build ShaderCacheTool Linux Debug  $$args
+ShaderCacheTool-Linux-DebugGame.commands = $$build ShaderCacheTool Linux DebugGame  $$args
+ShaderCacheTool-Linux-Shipping.commands = $$build ShaderCacheTool Linux Shipping  $$args
+ShaderCacheTool-Linux-Test.commands = $$build ShaderCacheTool Linux Test  $$args
+ShaderCacheTool.commands = $$build ShaderCacheTool Linux Development  $$args
+
 UE4EditorServices-Linux-Debug.commands = $$build UE4EditorServices Linux Debug  $$args
 UE4EditorServices-Linux-DebugGame.commands = $$build UE4EditorServices Linux DebugGame  $$args
 UE4EditorServices-Linux-Shipping.commands = $$build UE4EditorServices Linux Shipping  $$args
@@ -99,12 +106,6 @@ UnrealAtoS-Linux-DebugGame.commands = $$build UnrealAtoS Linux DebugGame  $$args
 UnrealAtoS-Linux-Shipping.commands = $$build UnrealAtoS Linux Shipping  $$args
 UnrealAtoS-Linux-Test.commands = $$build UnrealAtoS Linux Test  $$args
 UnrealAtoS.commands = $$build UnrealAtoS Linux Development  $$args
-
-ParallelExecutor-Linux-Debug.commands = $$build ParallelExecutor Linux Debug  $$args
-ParallelExecutor-Linux-DebugGame.commands = $$build ParallelExecutor Linux DebugGame  $$args
-ParallelExecutor-Linux-Shipping.commands = $$build ParallelExecutor Linux Shipping  $$args
-ParallelExecutor-Linux-Test.commands = $$build ParallelExecutor Linux Test  $$args
-ParallelExecutor.commands = $$build ParallelExecutor Linux Development  $$args
 
 ShaderCompileWorker-Linux-Debug.commands = $$build ShaderCompileWorker Linux Debug  $$args
 ShaderCompileWorker-Linux-DebugGame.commands = $$build ShaderCompileWorker Linux DebugGame  $$args
@@ -172,17 +173,17 @@ UnrealPak-Linux-Shipping.commands = $$build UnrealPak Linux Shipping  $$args
 UnrealPak-Linux-Test.commands = $$build UnrealPak Linux Test  $$args
 UnrealPak.commands = $$build UnrealPak Linux Development  $$args
 
-UnrealSync-Linux-Debug.commands = $$build UnrealSync Linux Debug  $$args
-UnrealSync-Linux-DebugGame.commands = $$build UnrealSync Linux DebugGame  $$args
-UnrealSync-Linux-Shipping.commands = $$build UnrealSync Linux Shipping  $$args
-UnrealSync-Linux-Test.commands = $$build UnrealSync Linux Test  $$args
-UnrealSync.commands = $$build UnrealSync Linux Development  $$args
-
 UnrealVersionSelector-Linux-Debug.commands = $$build UnrealVersionSelector Linux Debug  $$args
 UnrealVersionSelector-Linux-DebugGame.commands = $$build UnrealVersionSelector Linux DebugGame  $$args
 UnrealVersionSelector-Linux-Shipping.commands = $$build UnrealVersionSelector Linux Shipping  $$args
 UnrealVersionSelector-Linux-Test.commands = $$build UnrealVersionSelector Linux Test  $$args
 UnrealVersionSelector.commands = $$build UnrealVersionSelector Linux Development  $$args
+
+UnrealWatchdog-Linux-Debug.commands = $$build UnrealWatchdog Linux Debug  $$args
+UnrealWatchdog-Linux-DebugGame.commands = $$build UnrealWatchdog Linux DebugGame  $$args
+UnrealWatchdog-Linux-Shipping.commands = $$build UnrealWatchdog Linux Shipping  $$args
+UnrealWatchdog-Linux-Test.commands = $$build UnrealWatchdog Linux Test  $$args
+UnrealWatchdog.commands = $$build UnrealWatchdog Linux Development  $$args
 
 BootstrapPackagedGame-Linux-Debug.commands = $$build BootstrapPackagedGame Linux Debug  $$args
 BootstrapPackagedGame-Linux-DebugGame.commands = $$build BootstrapPackagedGame Linux DebugGame  $$args
@@ -258,6 +259,11 @@ QMAKE_EXTRA_TARGETS += \
 	DsymExporter-Linux-Shipping \
 	DsymExporter-Linux-Test \
 	DsymExporter \
+	ShaderCacheTool-Linux-Debug \
+	ShaderCacheTool-Linux-DebugGame \
+	ShaderCacheTool-Linux-Shipping \
+	ShaderCacheTool-Linux-Test \
+	ShaderCacheTool \
 	UE4EditorServices-Linux-Debug \
 	UE4EditorServices-Linux-DebugGame \
 	UE4EditorServices-Linux-Shipping \
@@ -268,11 +274,6 @@ QMAKE_EXTRA_TARGETS += \
 	UnrealAtoS-Linux-Shipping \
 	UnrealAtoS-Linux-Test \
 	UnrealAtoS \
-	ParallelExecutor-Linux-Debug \
-	ParallelExecutor-Linux-DebugGame \
-	ParallelExecutor-Linux-Shipping \
-	ParallelExecutor-Linux-Test \
-	ParallelExecutor \
 	ShaderCompileWorker-Linux-Debug \
 	ShaderCompileWorker-Linux-DebugGame \
 	ShaderCompileWorker-Linux-Shipping \
@@ -328,16 +329,16 @@ QMAKE_EXTRA_TARGETS += \
 	UnrealPak-Linux-Shipping \
 	UnrealPak-Linux-Test \
 	UnrealPak \
-	UnrealSync-Linux-Debug \
-	UnrealSync-Linux-DebugGame \
-	UnrealSync-Linux-Shipping \
-	UnrealSync-Linux-Test \
-	UnrealSync \
 	UnrealVersionSelector-Linux-Debug \
 	UnrealVersionSelector-Linux-DebugGame \
 	UnrealVersionSelector-Linux-Shipping \
 	UnrealVersionSelector-Linux-Test \
 	UnrealVersionSelector \
+	UnrealWatchdog-Linux-Debug \
+	UnrealWatchdog-Linux-DebugGame \
+	UnrealWatchdog-Linux-Shipping \
+	UnrealWatchdog-Linux-Test \
+	UnrealWatchdog \
 	BootstrapPackagedGame-Linux-Debug \
 	BootstrapPackagedGame-Linux-DebugGame \
 	BootstrapPackagedGame-Linux-Shipping \
