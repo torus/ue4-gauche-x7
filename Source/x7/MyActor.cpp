@@ -14,7 +14,7 @@ AMyActor::AMyActor()
     PrimaryActorTick.bCanEverTick = true;
 
     GaucheState *stat = state();
-    UE_LOG(LogTemp, Warning, TEXT("2 Gauche state: %p"), stat);
+    UE_LOG(LogTemp, Warning, TEXT("Gauche state: %p"), stat);
 
     // ScmEvalPacket pack;
     // int32 num = Scm_EvalCString("(diplay 12345)", SCM_OBJ(Scm_UserModule()), &pack);
@@ -31,14 +31,6 @@ void AMyActor::BeginPlay()
 void AMyActor::Tick( float DeltaTime )
 {
     Super::Tick( DeltaTime );
-}
-
-int32 AMyActor::Eval(const FString &expr)
-{
-    ScmEvalPacket pack;
-    int32 num = Scm_EvalCString(TCHAR_TO_ANSI(*expr), SCM_OBJ(Scm_UserModule()), &pack);
-    UE_LOG(LogTemp, Log, TEXT("Evaled: %d: %s"), num, *expr);
-    return num;
 }
 
 UGaucheObj* AMyActor::EvalString(const FString &expr)
@@ -61,6 +53,16 @@ UGaucheObj* AMyActor::Apply(UGaucheObj *proc, TArray<UGaucheObj*> args)
     UGaucheObj *obj = NewObject<UGaucheObj>();
     obj->setScmObj(result);
     return obj;
+}
+
+FString AMyActor::AsString(UGaucheObj *obj)
+{
+    ScmObj o = obj->getScmObj();
+    if (! SCM_STRINGP(o)) {
+        return FString("");
+    }
+
+    return FString(SCM_STRING_BODY_START(SCM_STRING_BODY(o)));
 }
 
 AMyActor::GaucheState::GaucheState()
