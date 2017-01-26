@@ -10,7 +10,7 @@ public class x7 : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
-		string GauchePath = "/home/toru/src/ue4/x7/Source/Gauche/";
+		string GauchePath = ModuleDirectory + "/../Gauche/";
 		string LibPrefix = GauchePath + "src/";
 		// string LibPostfixAndExt = ".a";
 
