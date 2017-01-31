@@ -33,32 +33,54 @@ void AMyActor::Tick( float DeltaTime )
     Super::Tick( DeltaTime );
 }
 
+static void ShowError(ScmObj c)
+{
+    ScmObj m = Scm_ConditionMessage(c);
+    if (SCM_FALSEP(m)) {
+        Scm_Printf(SCM_CURERR, "gosh: Thrown unknown condition: %S\n", c);
+    } else {
+        Scm_Printf(SCM_CURERR, "gosh: %S: %A\n", Scm_ConditionTypeName(c), m);
+    }
+}
+
 UGaucheObj* AMyActor::EvalString(const FString &expr)
 {
-    ScmObj result = Scm_EvalCStringRec(TCHAR_TO_ANSI(*expr), SCM_OBJ(Scm_UserModule()));
-    UE_LOG(LogTemp, Log, TEXT("EvalString: %s"), *expr);
+    ScmEvalPacket epak;
     UGaucheObj *obj = NewObject<UGaucheObj>();
-    obj->setScmObj(result);
+
+    if (Scm_EvalCString(TCHAR_TO_ANSI(*expr), SCM_OBJ(Scm_UserModule()), &epak) < 0) {
+        ShowError(epak.exception);
+        obj->setScmObj(SCM_NIL);
+    } else {
+        UE_LOG(LogTemp, Log, TEXT("EvalString: %s"), *expr);
+        obj->setScmObj(epak.results[0]);
+    }
+
     return obj;
 }
 
 UGaucheObj* AMyActor::Apply(UGaucheObj *proc, TArray<UGaucheObj*> args)
 {
+    ScmEvalPacket epak;
     ScmObj argList = SCM_NIL;
     for (auto arg : args) {
 	argList = Scm_Cons(arg->getScmObj(), argList);
     }
-    ScmObj result = Scm_ApplyRec(proc->getScmObj(), argList);
-
+    // ScmObj result = Scm_ApplyRec(proc->getScmObj(), argList);
     UGaucheObj *obj = NewObject<UGaucheObj>();
-    obj->setScmObj(result);
+    if (Scm_ApplyRec(proc->getScmObj(), argList) < 0) {
+        ShowError(epak.exception);
+        obj->setScmObj(SCM_NIL);
+    } else {
+        obj->setScmObj(epak.results[0]);
+    }
     return obj;
 }
 
 FString AMyActor::AsString(UGaucheObj *obj)
 {
     ScmObj o = obj->getScmObj();
-    if (! SCM_STRINGP(o)) {
+    if (!o || !SCM_STRINGP(o)) {
         return FString("");
     }
 
