@@ -87,6 +87,20 @@ FString AMyActor::AsString(UGaucheObj *obj)
     return FString(SCM_STRING_BODY_START(SCM_STRING_BODY(o)));
 }
 
+float AMyActor::AsFloat(UGaucheObj *obj)
+{
+    ScmObj o = obj->getScmObj();
+    if (SCM_FLONUMP(o)) {
+        return float(SCM_FLONUM_VALUE(o));
+    }
+
+    if (SCM_INTP(o)) {
+        return float(SCM_INT_VALUE(o));
+    }
+
+    return 0;
+}
+
 AMyActor::GaucheState::GaucheState()
 {
     SCM_INIT_STATIC();

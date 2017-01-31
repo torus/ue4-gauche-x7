@@ -30,6 +30,10 @@ class X7_API AMyActor : public AActor
 
     UFUNCTION(BlueprintCallable, Category="Gauche")
 	FString AsString(UGaucheObj *obj);
+
+    UFUNCTION(BlueprintCallable, Category="Gauche")
+	float AsFloat(UGaucheObj *obj);
+
 private:
 
     class GaucheState {
