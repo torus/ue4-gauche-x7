@@ -23,16 +23,16 @@ class X7_API AMyActor : public AActor
     virtual void Tick( float DeltaSeconds ) override;
 
     UFUNCTION(BlueprintCallable, Category="Gauche")
-	UGaucheObj* EvalString(const FString &expr);
+	static UGaucheObj* EvalString(const FString &expr);
 
     UFUNCTION(BlueprintCallable, Category="Gauche")
-	UGaucheObj* Apply(UGaucheObj *proc, TArray<UGaucheObj*> args);
+	static UGaucheObj* Apply(UGaucheObj *proc, TArray<UGaucheObj*> args);
 
     UFUNCTION(BlueprintCallable, Category="Gauche")
-	FString AsString(UGaucheObj *obj);
+	static FString AsString(UGaucheObj *obj);
 
     UFUNCTION(BlueprintCallable, Category="Gauche")
-	float AsFloat(UGaucheObj *obj);
+	static float AsFloat(UGaucheObj *obj);
 
 private:
 
