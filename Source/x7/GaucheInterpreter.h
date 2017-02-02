@@ -5,16 +5,16 @@
 
 #include "GameFramework/Actor.h"
 #include "GaucheObj.h"
-#include "MyActor.generated.h"
+#include "GaucheInterpreter.generated.h"
 
 UCLASS()
-class X7_API AMyActor : public AActor
+class X7_API AGaucheInterpreter : public AActor
 {
     GENERATED_BODY()
 
  public:	
     // Sets default values for this actor's properties
-    AMyActor();
+    AGaucheInterpreter();
 
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;

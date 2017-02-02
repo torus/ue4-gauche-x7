@@ -1,13 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "x7.h"
-#include "MyActor.h"
+#include "GaucheInterpreter.h"
 #include "GaucheObj.h"
 #include <gauche.h>
 #include <gauche/static.h>
 
 // Sets default values
-AMyActor::AMyActor()
+AGaucheInterpreter::AGaucheInterpreter()
 {
     // Set this actor to call Tick() every frame.  You can turn this
     // off to improve performance if you don't need it.
@@ -22,13 +22,13 @@ AMyActor::AMyActor()
 }
 
 // Called when the game starts or when spawned
-void AMyActor::BeginPlay()
+void AGaucheInterpreter::BeginPlay()
 {
     Super::BeginPlay();
 }
 
 // Called every frame
-void AMyActor::Tick( float DeltaTime )
+void AGaucheInterpreter::Tick( float DeltaTime )
 {
     Super::Tick( DeltaTime );
 }
@@ -43,7 +43,7 @@ static void ShowError(ScmObj c)
     }
 }
 
-UGaucheObj* AMyActor::EvalString(const FString &expr)
+UGaucheObj* AGaucheInterpreter::EvalString(const FString &expr)
 {
     ScmEvalPacket epak;
     UGaucheObj *obj = NewObject<UGaucheObj>();
@@ -59,7 +59,7 @@ UGaucheObj* AMyActor::EvalString(const FString &expr)
     return obj;
 }
 
-UGaucheObj* AMyActor::Apply(UGaucheObj *proc, TArray<UGaucheObj*> args)
+UGaucheObj* AGaucheInterpreter::Apply(UGaucheObj *proc, TArray<UGaucheObj*> args)
 {
     ScmEvalPacket epak;
     ScmObj argList = SCM_NIL;
@@ -77,7 +77,7 @@ UGaucheObj* AMyActor::Apply(UGaucheObj *proc, TArray<UGaucheObj*> args)
     return obj;
 }
 
-FString AMyActor::AsString(UGaucheObj *obj)
+FString AGaucheInterpreter::AsString(UGaucheObj *obj)
 {
     ScmObj o = obj->getScmObj();
     if (!o || !SCM_STRINGP(o)) {
@@ -87,7 +87,7 @@ FString AMyActor::AsString(UGaucheObj *obj)
     return FString(SCM_STRING_BODY_START(SCM_STRING_BODY(o)));
 }
 
-float AMyActor::AsFloat(UGaucheObj *obj)
+float AGaucheInterpreter::AsFloat(UGaucheObj *obj)
 {
     ScmObj o = obj->getScmObj();
     if (SCM_FLONUMP(o)) {
@@ -101,7 +101,7 @@ float AMyActor::AsFloat(UGaucheObj *obj)
     return 0;
 }
 
-AMyActor::GaucheState::GaucheState()
+AGaucheInterpreter::GaucheState::GaucheState()
 {
     SCM_INIT_STATIC();
 }
