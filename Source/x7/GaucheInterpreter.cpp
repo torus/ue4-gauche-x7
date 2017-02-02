@@ -68,7 +68,7 @@ UGaucheObj* AGaucheInterpreter::Apply(UGaucheObj *proc, TArray<UGaucheObj*> args
     }
     // ScmObj result = Scm_ApplyRec(proc->getScmObj(), argList);
     UGaucheObj *obj = NewObject<UGaucheObj>();
-    if (Scm_ApplyRec(proc->getScmObj(), argList) < 0) {
+    if (Scm_Apply(proc->getScmObj(), argList, &epak) < 0) {
         ShowError(epak.exception);
         obj->setScmObj(SCM_NIL);
     } else {
